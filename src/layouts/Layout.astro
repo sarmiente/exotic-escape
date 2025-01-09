@@ -1,3 +1,11 @@
+---
+import Navbar from "../components/ui/Navbar.astro";
+import Footer from "../components/ui/Footer.astro";
+import LanguagePicker from "../components/LanguagePicker.astro";
+import "../../src/styles/globals.css"
+import Whatsapp from "../components/buttons/Whatsapp.astro";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,18 +13,15 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>WESELL - Trading Group</title>
+		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	</head>
-	<body>
+	<body class="min-h-screen flex flex-col">
+		<Navbar />
+		<LanguagePicker />
 		<slot />
+		<Whatsapp />
+		<Footer />
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

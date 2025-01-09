@@ -1,0 +1,23 @@
+{
+    "nav" :{
+        "home": "Inicio",
+        "about": "Nosotros",
+        "services": "Servicios",
+        "contact": "Contacto",
+        "who-we-are": "Quiénes Somos",
+        "our-team": "Nuestro Equipo",
+        "privacy": "Política de Privacidad",
+        "pqrs": "PQRS",
+        "support": "Soporte",
+        "rights": "Todos los derechos reservados",
+        "more": "Saber más",
+        "terms": "Términos y Condiciones",
+        "links": "Enlaces útiles",
+        "msg": "Liderando Soluciones Logísticas Globales",
+        "inter": "Transporte Internacional",
+        "docs": "Gestión Documental de Aduana",
+        "distr": "Almacenamiento y Distribución",
+        "cons": "Consultoría Logística",
+        "sure": "Seguro de Carga"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "nav" :{
+        "home": "Home",
+        "about": "About us",
+        "services": "Services",
+        "contact": "Contact",
+        "who-we-are": "Who We Are",
+        "our-team": "Our Team",
+        "privacy": "Privacy Policy",
+        "pqrs": "Q&A",
+        "support": "Support",
+        "rights": "All rights reserved",
+        "more": "Learn More",
+        "terms": "Terms & Conditions",
+        "links": "Useful Links",
+        "msg": "Leading Global Logistic Solutions",
+        "inter": "International Transportation",
+        "docs": "Customs Document Management",
+        "distr": "Storage and Distribution",
+        "cons": "Logistics Consulting",
+        "sure": "Cargo Insurance"
+    }
+}

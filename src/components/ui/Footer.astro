@@ -1,0 +1,228 @@
+---
+// @ts-nocheck
+import Logo from "../../icons/br_logo.svg"
+
+import { Icon } from "astro-icon/components";
+import { localizePath } from "astro-i18next";
+import { t } from "i18next";
+
+const date = new Date();
+
+const footerData = [
+  {
+    title: t("nav.about"),
+    items: [
+      { text: t("nav.who-we-are"), href : localizePath("/quienes-somos") },
+      { text: t("nav.our-team"), href : localizePath("/nuestro-equipo") },
+    ],
+  },
+  {
+    title: t("nav.services"),
+    items: [
+      { text: t("nav.inter"), href : localizePath("/") },
+      { text: t("nav.docs"), href : localizePath("/") },
+      { text: t("nav.distr"), href : localizePath("/") },
+      { text: t("nav.cons"), href : localizePath("/") },
+      { text: t("nav.sure"), href : localizePath("/") },
+    ],
+  },
+  {
+    title: "Enlaces útiles",
+    items: [
+      { text: t("nav.pqrs"), href : "#" },
+      { text: t("nav.support"), href : "#" },
+      { text: "Blog", href : "#" }
+    ],
+  },
+];
+---
+
+<footer class="bg-white z-10">
+  <div class="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+        <div class="flex justify-center text-oxford-blue sm:justify-start">
+            
+            <a href="#">
+                <img class="w-auto h-12 sm:h-16" src="/src/assets/logo_wesell_dos.svg" alt="Logo de WESELL">
+            </a>
+        </div>
+
+        <p class="mt-6 max-w-md text-center font-body uppercase leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
+         {t("nav.msg")}
+        </p>
+
+        <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-true-blue transition hover:text-opacity-75"
+            >
+              <span class="sr-only">Facebook</span>
+              <Icon class="h-6 w-6" name="facebook" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-true-blue transition hover:text-opacity-75"
+            >
+              <span class="sr-only">Instagram</span>
+              <Icon class="h-6 w-6" name="instagram" />
+            </a>
+          </li>
+
+
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-true-blue transition hover:text-opacity-75"
+            >
+              <span class="sr-only">LinkedIn</span>
+              <Icon class="h-6 w-6" name="linkedin" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
+        <div class="text-center sm:text-left">
+          <p class="text-lg capitalize font-body font-semibold text-rich-black">{t("nav.about")}</p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+           {
+            footerData[0].items.map((item) => (
+            <li>
+                <a class="text-gray-700  transition font-body capitalize hover:text-true-blue" href={item.href}>
+                  {item.text}
+                </a>
+            </li>
+            ))
+           }
+
+          </ul>
+        </div>
+
+        <div class="text-center sm:text-left">
+          <p class="text-lg capitalize font-body font-semibold text-rich-black">{t("nav.services")}</p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+            {
+              footerData[1].items.map((item) => (
+                <li>
+                  <a class="text-gray-700 transition font-body capitalize hover:text-true-blue" href={item.href}>
+                    {item.text}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+
+        <div class="text-center sm:text-left">
+          <p class="text-lg capitalize font-body font-semibold text-rich-black">{t("nav.links")}</p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+            {
+              footerData[2].items.map((item) => (
+                <li>
+                  <a class="text-gray-700 transition font-body capitalize hover:text-true-blue" href={item.href}>
+                    {item.text}
+                  </a>
+                </li>
+              ))
+            }
+
+           
+          </ul>
+        </div>
+
+        <div class="text-center sm:text-left">
+          <p class="text-lg capitalize font-body font-semibold text-rich-black">{t("nav.contact")}</p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+           
+
+            <li
+              class="flex sm:justify-start items-center justify-center  gap-1.5"
+            >
+            <Icon class="h-4 w-4 text-green-500" name="whatsapp" />
+
+              <a href="https://api.whatsapp.com/send/?phone=573242016401&text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios">
+                <span class=" p-1 font-body">+57 314 309 7683</span>
+              </a>
+            </li>
+
+          
+            <li
+              class="flex sm:justify-start items-center justify-center gap-1.5"
+            >
+              <Icon class="h4 w-4 " name="envelop_vector" />
+
+              <a href="mailto:info@brsolution.com.co">
+                <span class="text-white p-1.5 font-body text-xs bg-oxford-blue rounded-2xl">pricing@wesell.com.co</span>
+              </a>
+            </li>
+
+
+
+            <li
+              class="block sm:justify-start items-center justify-center gap-1.5"
+            >
+              
+
+              <address class=" -mt-0.5 not-italic text-gray-700 font-body uppercase">
+                
+                Cartagena de Indias
+              </address>
+              <br>
+              <address class="-mt-0.5 not-italic text-gray-700 font-body uppercase">
+                Bogotá
+              </address>
+            </li>
+
+            
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 border-t border-gray-100 pt-6">
+      <div class="text-center sm:flex sm:justify-between sm:text-left">
+        <a href="http://devs.sarpin.agency/" target="_blank"><span class="font-body block sm:inline text-xs text-gray-400 hover:text-true-blue pb-5 md:p-0">sarpin.agency</span></a>
+        <p class="text-sm text-gray-500">
+          
+
+          <a
+            class="inline-block font-body text-true-blue transition hover:text-oxford-blue"
+            href="/terms-and-conditions"
+          >
+              {t("nav.terms")}
+          </a>
+
+          <span>&middot;</span>
+
+          <a
+            class="inline-block font-body text-true-blue transition hover:text-oxford-blue"
+            href="/privacy-policy"
+          >
+              {t("nav.privacy")}
+          </a>
+        </p>
+        
+        <p class="mt-4 text-sm font-body text-gray-500 sm:order-first sm:mt-0">
+          WESELL &copy; {date.getFullYear()}. {t("nav.rights")} </p>
+      </div>
+    </div>
+  </div>
+</footer>
