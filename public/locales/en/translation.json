@@ -14,10 +14,37 @@
         "terms": "Terms & Conditions",
         "links": "Useful Links",
         "msg": "Leading Global Logistic Solutions",
+        "sub": "Trust the Experts for Your International Logistics Needs",
         "inter": "International Transportation",
         "docs": "Customs Document Management",
         "distr": "Storage and Distribution",
         "cons": "Logistics Consulting",
-        "sure": "Cargo Insurance"
+        "sure": "Cargo Insurance",
+        "per": "Personalized Services",
+        "mail": "Your email address",
+        "btn": "Get Information",
+        "cnl": "Cancel"
+    },
+    "cta":{
+        "name": "Name / Company",
+        "mail": "Email",
+        "phone": "Phone",
+        "msg": "Leave us a message. How can we assist you?",
+        "privacy": "I agree to the privacy policies",
+        "link": "Click to view",
+        "btn": "Submit"
+    },
+    "services": {
+        "title": "Comprehensive Solutions for Your Logistics Needs",
+        "subtitle": "Request a personalized quote now!",
+        "sub-one": "Maritime - Air - Land",
+        "one": "Move your goods globally with ease and speed! Trust our expert transportation services.",
+        "sub-two": "Consolidation and Deconsolidation",
+        "two": "Navigate customs hassle-free! Let us handle your documentation swiftly and accurately",
+        "three": "Secure, store, and distribute efficiently! Your goods are in safe hands with us.",
+        "four": "Optimize your supply chain! Partner with us for expert logistics consulting.",
+        "five": "Protect your cargo with comprehensive insurance! Ensure peace of mind in every shipment.",
+        "six": "Tailor-made logistics solutions just for you! Experience seamless, personalized service."
     }
+   
 }

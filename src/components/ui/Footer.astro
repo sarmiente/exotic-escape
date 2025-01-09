@@ -40,19 +40,20 @@ const footerData = [
 <footer class="bg-white z-10">
   <div class="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-      <div>
-        <div class="flex justify-center text-oxford-blue sm:justify-start">
+      <div class="mx-auto sm:justify-center">
+        <div class="flex justify-center text-oxford-blue lg:justify-start">
             
             <a href="#">
                 <img class="w-auto h-12 sm:h-16" src="/src/assets/logo_wesell_dos.svg" alt="Logo de WESELL">
             </a>
         </div>
-
-        <p class="mt-6 max-w-md text-center font-body uppercase leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
+        <div class="flex justify-center text-oxford-blue sm:justify-start">
+            
+        <p class="mt-6 max-w-md text-center font-body uppercase leading-relaxed text-gray-500 sm:max-w-xs lg:text-left">
          {t("nav.msg")}
         </p>
-
-        <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+      </div>
+        <ul class="mt-8 flex justify-center gap-6 lg:justify-start md:gap-8">
           <li>
             <a
               href="#"
@@ -153,7 +154,7 @@ const footerData = [
             <li
               class="flex sm:justify-start items-center justify-center  gap-1.5"
             >
-            <Icon class="h-4 w-4 text-green-500" name="whatsapp" />
+            <img src="/src/icons/whatsapp.svg" alt="" width={20} height={20}  >
 
               <a href="https://api.whatsapp.com/send/?phone=573242016401&text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios">
                 <span class=" p-1 font-body">+57 314 309 7683</span>
@@ -174,16 +175,17 @@ const footerData = [
 
 
             <li
-              class="block sm:justify-start items-center justify-center gap-1.5"
+              class="block items-center gap-1.5"
             >
               
 
-              <address class=" -mt-0.5 not-italic text-gray-700 font-body uppercase">
-                
+              <address class="flex justify-center sm:justify-start  items-center -mt-0.5 not-italic text-gray-700 font-body capitalize">
+                <Icon name="location" class="text-red-600" />
                 Cartagena de Indias
               </address>
               <br>
-              <address class="-mt-0.5 not-italic text-gray-700 font-body uppercase">
+              <address class="flex justify-center sm:justify-start  items-center -mt-0.5 not-italic text-gray-700 font-body capitalize">
+                <Icon name="location" />
                 Bogotá
               </address>
             </li>

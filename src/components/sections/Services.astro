@@ -1,0 +1,34 @@
+---
+import ModalCard from "../../components/modal/ModalCard.astro";
+import { t } from "i18next";
+---
+
+<section class="dark:bg-slate-800 bg-gray-50 lg:pt-20">
+    <div class="mx-auto max-w-screen-xl px-4 py-32 lg:py-16">
+      
+      <!-- Título y detalles del post -->
+      <div class="text-center mb-12 space-y-6">
+        <p class="uppercase font-body">
+            {t("nav.services")}
+        </p>
+        <h1
+          class="text-2xl lg:text-4xl font-hero mb-4 text-oxford-blue dark:text-white"
+        >
+          {t("services.title")}
+        </h1>
+        <p class="font-body">
+            {t("services.subtitle")}
+        </p>
+      </div>
+
+  
+
+          <ModalCard />
+     
+
+
+
+
+
+    </div>
+  </section>

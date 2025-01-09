@@ -1,12 +1,11 @@
 ---
 import { changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/sections/Hero.astro";
 
 changeLanguage("en");
 ---
 
 <Layout>
-	<main class="flex-grow p-4 bg-gray-100">
-		<p class="text-center ">Este es el contenido principal. Si el contenido es corto, el footer se mantendrá abajo.</p>
-	  </main>
+	<Hero />
 </Layout>

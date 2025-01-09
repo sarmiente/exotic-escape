@@ -1,35 +1,31 @@
 ---
+import { Icon } from "astro-icon/components";
 import FormButton from "../buttons/FormButton.astro";
-
+import { t } from "i18next";
 
 ---
 <div class="relative flex h-[90vh] bg-true-blue ">
     <!-- Sección de contenido -->
     <div class="flex flex-col justify-center px-8 space-y-6 text-white lg:w-1/2">
       <h1 class="text-4xl font-hero lg:text-5xl uppercase">
-        LIDERANDO SOLUCIONES LOGÍSTICAS GLOBALES
+        {t("nav.msg")}
       </h1>
       <p class="text-lg lg:text-xl capitalize">
-        Confía en los Expertos para tus Necesidades Logísticas Internacionales
+        {t("nav.sub")}
       </p>
-      
         <FormButton />
-
     </div>
   
     <!-- Sección de imagen con clip diagonal -->
     <div class="hidden md:flex relative w-full lg:w-1/2">
-    
-        <svg class=" z-10" width="237" height="840" viewBox="0 0 237 840" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0H237L0 839.5V418.063V0Z" fill="#0466C8"/>
-            </svg>
-            
-            
-
+           
       <div class="absolute inset-0 bg-cover bg-center" 
-        style="background-image: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        style="background-image: url('/src/assets/hero.svg');">
+        <div class="flex gap-1 items-center absolute bottom-2 right-2 bg-rich-black bg-opacity-75 text-white text-xs px-2 py-1 rounded-lg">
+          <Icon name="location" class="text-red-600" />
+          <p class="font-body capitalize">Bukit Merah, Singapore</p>
+        </div>
       </div>
-      <div class="absolute inset-0 bg-rich-black opacity-10"></div>
       
     </div>
   </div>
