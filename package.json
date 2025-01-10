@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@alpinejs/focus": "^3.14.8",
     "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^4.0.3",
     "@astrojs/sitemap": "^3.2.1",

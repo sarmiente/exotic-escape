@@ -19,7 +19,7 @@
     "docs": "Gestión Documental de Aduana",
     "distr": "Almacenamiento y Distribución",
     "cons": "Consultoría Logística",
-    "sure": "Seguro de Carga",
+    "sure": "Seguro y Protección de la Carga",
     "per": "Servicios Personalizados",
     "mail": "Tu correo electrónico",
     "btn": "Obtener Información"
@@ -30,7 +30,7 @@
         "phone": "Teléfono",
         "msg": "Déjanos un mensaje. ¿Cómo podemos asistirte?",
         "privacy": "Estoy de acuerdo con las políticas de privacidad.",
-        "link": "Clic para ver",
+        "link": "Click para ver",
         "btn": "Enviar",
         "cnl": "Cancelar"
     },
@@ -39,16 +39,27 @@
         "subtitle": "Solicita una cotización personalizada ahora!",
         "sub-one": "Marítimo - Aéreo - Terrestre",
         "one": "¡Transporta tus mercancías a nivel mundial con facilidad y rapidez! Confía en nuestros servicios expertos.",
-        "sub-two": "Consolidación y desconsolidación",
+        "sub-two": "Exportación e Importación",
         "two": "¡Navega por la aduana sin complicaciones! Deja que gestionemos tu documentación de manera rápida y precisa.",
-        "sub-three": "",
+        "sub-three": "Consolidación y desconsolidación",
         "three": "¡Asegura, almacena y distribuye eficientemente! Tus mercancías están en buenas manos con nosotros.",
-        "sub-four": "",
+        "sub-four": "Asesoriamiento proyectos complejos",
         "four": "¡Optimiza tu cadena de suministro! Asóciate con nosotros para una consultoría logística experta.",
-        "sub-five": "",
+        "sub-five": "Cobertura total contra riesgos",
         "five": "¡Protege tu carga con un seguro integral! Asegura la tranquilidad en cada envío.",
-        "sub-six": "",
+        "sub-six": "Estrategias logísticas personalizadas",
         "six": "¡Soluciones logísticas hechas a tu medida! Experimenta un servicio personalizado y sin problemas."
+    },
+    "who" : {
+        "title": "Descubre cómo podemos transformar ",
+        "span": "tu cadena de suministro hoy",
+        "subtitle": "Somos una agencia de carga internacional especializada en soluciones de transporte integral, logísticas y portuarias, enfocados en el cumplimiento, calidad, atención y rentabilidad para su negocio."
+    },
+    "location": {
+        "title" : "Localizaciones",
+        "subtitle": "Innovación y Eficiencia en Movimiento Global",
+        "msg-one": "Nuestra sede en Cartagena se especializa en la logística marítima y portuaria. Con una infraestructura moderna y un equipo altamente calificado, garantizamos una eficiente gestión de cargas y operaciones en uno de los puertos más importantes de la región.",
+        "msg-two": "Nuestra sede en Bogotá se destaca por su logística terrestre y aérea, ofreciendo soluciones integrales para la distribución nacional e internacional. Ubicados estratégicamente, facilitamos la conectividad y el acceso a mercados globales."
     }
 
 }

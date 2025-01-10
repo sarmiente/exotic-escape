@@ -34,17 +34,35 @@
         "link": "Click to view",
         "btn": "Submit"
     },
-    "services": {
-        "title": "Comprehensive Solutions for Your Logistics Needs",
-        "subtitle": "Request a personalized quote now!",
-        "sub-one": "Maritime - Air - Land",
-        "one": "Move your goods globally with ease and speed! Trust our expert transportation services.",
-        "sub-two": "Consolidation and Deconsolidation",
-        "two": "Navigate customs hassle-free! Let us handle your documentation swiftly and accurately",
-        "three": "Secure, store, and distribute efficiently! Your goods are in safe hands with us.",
-        "four": "Optimize your supply chain! Partner with us for expert logistics consulting.",
-        "five": "Protect your cargo with comprehensive insurance! Ensure peace of mind in every shipment.",
-        "six": "Tailor-made logistics solutions just for you! Experience seamless, personalized service."
-    }
+   "services": {
+    "title": "Comprehensive Solutions for Your Logistics Needs",
+    "subtitle": "Request a personalized quote now!",
+    "sub-one": "Maritime - Air - Land",
+    "one": "Transport your goods worldwide with ease and speed! Trust our expert services.",
+    "sub-two": "Export and Import",
+    "two": "Navigate customs without complications! Let us handle your documentation quickly and accurately.",
+    "sub-three": "Consolidation and Deconsolidation",
+    "three": "Secure, store, and distribute efficiently! Your goods are in good hands with us.",
+    "sub-four": "Complex Project Advisory",
+    "four": "Optimize your supply chain! Partner with us for expert logistics consultancy.",
+    "sub-five": "Comprehensive Risk Coverage",
+    "five": "Protect your cargo with comprehensive insurance! Ensure peace of mind with every shipment.",
+    "sub-six": "Customized Logistics Strategies",
+    "six": "Tailored logistics solutions for you! Experience personalized and hassle-free service."
+},
+"who": {
+    "title" :"Discover how we can transform",
+    "span": "your supply chain today.",
+    "subtitle": "We are an international freight agency specializing in comprehensive transportation, logistics, and port solutions, focused on compliance, quality, service, and profitability for your business."
+    
+},
+"location": {
+    "title": "Locations",
+    "subtitle": "Innovation and Efficiency in Global Movement",
+    "msg-one": "Our office in Cartagena specializes in maritime and port logistics. With modern infrastructure and a highly qualified team, we ensure efficient management of cargo and operations in one of the region's most important ports.",
+    "msg-two": "Our office in Bogotá stands out for its land and air logistics, offering comprehensive solutions for national and international distribution. Strategically located, we facilitate connectivity and access to global markets."
+}
+
+
    
 }
