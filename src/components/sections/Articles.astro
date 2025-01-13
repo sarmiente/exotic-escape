@@ -1,0 +1,96 @@
+---
+// @ts-nocheck
+import { getCollection } from "astro:content";
+import { localizePath } from "astro-i18next";
+import { t } from "i18next";
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const options = { year: 'numeric', month: 'short', day: 'numeric' };
+
+---
+
+<section class="container mx-auto px-4 py-16">
+    <div class="text-center space-y-6">
+        <h1 class="font-body uppercase dark:text-white">
+          {t("blog.main")}
+          </h1>
+          <p class="text-3xl text-oxford-blue font-hero uppercase sm:text-4xl">
+            {t("blog.title")}
+          </p>
+          <p class="font-body">
+            {t("blog.subtitle")}
+        </p>
+    </div>
+  <div class="grid grid-cols-1 gap-12 md:grid-cols-2 mt-14 xl:grid-cols-3">
+   {
+    posts.slice(0,3).map((post) => {
+        {/* Formato para fecha en el card de los articulos */}
+        const pubDate = new Date(post.data.pubDate);
+        const formattedDate = pubDate.toLocaleDateString('en-US', options);
+        
+        return (
+          <div class="hover:scale-105">
+              <img
+                class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+                src={post.data.heroImage}
+                alt="Main Article Image"
+              />
+              <div class="mt-8">
+                <span class="text-true-blue uppercase tracking-wider">{t(post.data.category)}</span>
+                <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white truncate">
+                    {t(post.data.title)}
+                </h1>
+                <p class="mt-2 text-gray-500 dark:text-gray-400 line-clamp-3">
+                    {t(post.data.description || 'Descripción del artículo...')}
+                </p>
+                <div class="flex items-center justify-between mt-4">
+                  <div>
+                    <a
+                      href="#"
+                      class="text-lg  font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                    >
+                      Sarpin Agency
+                    </a>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                        {formattedDate}
+                    </p>
+                  </div>
+                  <a
+                    href={`${localizePath("/blog")}/${post.slug}/`}
+                    class="inline-block text-true-blue underline hover:text-oxford-blue"
+                    >{t("blog.btn")}</a>
+                </div>
+              </div>
+          </div>
+        )
+    })
+   }
+  </div>
+  <div class="flex items-center justify-center pt-12">
+    <a
+                    href={`${localizePath("/blog")}`}
+                    class="inline-block text-true-blue  hover:text-oxford-blue"
+                    >
+    <button
+      class="flex items-center px-4 py-2.5 font-medium tracking-wide text-true-blue capitalize transition-colors duration-300 transform border border-true-blue rounded-lg hover:bg-sky-50 focus:outline-none focus:ring focus:ring-true-blue focus:ring-opacity-80"
+      >
+      
+      <span class="mx-1">{t("blog.btn-all")}</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 mx-1 h-6"
+        ><path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path></svg
+      >
+   
+    </button>
+</a>
+  </div>
+</section>

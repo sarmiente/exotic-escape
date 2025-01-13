@@ -22,7 +22,7 @@
     "sure": "Seguro y Protección de la Carga",
     "per": "Servicios Personalizados",
     "mail": "Tu correo electrónico",
-    "btn": "Obtener Información"
+    "btn": "Cotizar"
 },
 "cta":{
         "name": "Nombre / Empresa",
@@ -60,6 +60,14 @@
         "subtitle": "Innovación y Eficiencia en Movimiento Global",
         "msg-one": "Nuestra sede en Cartagena se especializa en la logística marítima y portuaria. Con una infraestructura moderna y un equipo altamente calificado, garantizamos una eficiente gestión de cargas y operaciones en uno de los puertos más importantes de la región.",
         "msg-two": "Nuestra sede en Bogotá se destaca por su logística terrestre y aérea, ofreciendo soluciones integrales para la distribución nacional e internacional. Ubicados estratégicamente, facilitamos la conectividad y el acceso a mercados globales."
+    },
+    "blog":{
+        "main" : "Explorar",
+        "title":"¡No te pierdas nuestras últimas novedades!",
+        "subtitle":"Lee ahora las entradas más recientes del blog!",
+        "btn":"Leer más",
+        "btn-all":"Ver todos",
+        "art": "Artículos y noticias más recientes"
     }
 
 }

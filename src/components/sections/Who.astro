@@ -1,5 +1,7 @@
 ---
+// @ts-nocheck
 import { t } from "i18next";
+import { localizePath } from "astro-i18next";
 ---
 <section class="bg-white dark:bg-gray-900 flex justify-center items-center min-h-screen">
     <div class="px-6 py-16 mx-auto">
@@ -12,7 +14,9 @@ import { t } from "i18next";
                     <h1 class="text-3xl font-hero text-oxford-blue dark:text-white lg:text-4xl text-center lg:text-left">
                         {t("who.title")}
                         <br> 
-                        <span class="text-true-blue">{t("who.span")}</span>
+                        <span class="text-true-blue">
+                            {t("who.span")}
+                        </span>
                     </h1>
                     
                     <p class="font-body mt-3 text-gray-600 dark:text-gray-400 text-center lg:text-left">
@@ -20,9 +24,11 @@ import { t } from "i18next";
                     </p>
                     
                     <div class="flex justify-center lg:justify-start">
+                        <a href={localizePath("/nosotros")}>
                         <button class="font-body px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-true-blue rounded-lg lg:w-auto hover:bg-oxford-blue focus:outline-none focus:bg-true-blue hover:scale-105">
                             {t("nav.more")}
                         </button>
+                    </a>
                     </div>
                 </div>
             </div>

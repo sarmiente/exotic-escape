@@ -10,14 +10,17 @@ changeLanguage("es");
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<Layout title="">
+<Layout title="Ultimos articulos">
   <main class="bg-gray-50 dark:bg-slate-800 pt-36">
-    <section class="pb-16 py-10">
+    <section class="pb-16">
 		
-      <h1 class=" text-center font-pattern uppercase dark:text-white ">
-        Explora 
-      </h1>
-      <p class="text-3xl font-heading text-center uppercase sm:text-4xl">Nuestros Ultimos Articulos</p>
+      <div class="text-center space-y-6">
+        
+          <p class="text-3xl text-oxford-blue font-hero uppercase sm:text-4xl">
+            {t("blog.art")}
+          </p>
+         
+    </div>
       <ul class="grid gap-8 max-w-6xl mx-auto px-4 sm:grid-cols-2 lg:grid-cols-3 py-12">
         {posts.map((post) => (
           <li class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">

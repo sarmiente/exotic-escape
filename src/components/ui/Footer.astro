@@ -29,8 +29,8 @@ const footerData = [
   {
     title: "Enlaces útiles",
     items: [
-      { text: t("nav.pqrs"), href : "#" },
-      { text: t("nav.support"), href : "#" },
+      
+      { text: t("nav.support"), href : "/contact" },
       { text: "Blog", href : "#" }
     ],
   },
@@ -43,8 +43,8 @@ const footerData = [
       <div class="mx-auto sm:justify-center">
         <div class="flex justify-center text-oxford-blue lg:justify-start">
             
-            <a href="#">
-                <img class="w-auto h-12 sm:h-16" src="/src/assets/logo_wesell_dos.svg" alt="Logo de WESELL">
+            <a href={localizePath("/")}>
+                <img class="w-auto h-12 sm:h-16" src="/logo_wesell_dos.svg" alt="Logo de WESELL">
             </a>
         </div>
         <div class="flex justify-center text-oxford-blue sm:justify-start">
@@ -68,9 +68,9 @@ const footerData = [
 
           <li>
             <a
-              href="#"
-              rel="noreferrer"
               target="_blank"
+              href="https://www.instagram.com/wesell_trading_group" 
+              rel="noreferrer"
               class="text-true-blue transition hover:text-opacity-75"
             >
               <span class="sr-only">Instagram</span>
@@ -131,6 +131,11 @@ const footerData = [
           <p class="text-lg capitalize font-body font-semibold text-rich-black">{t("nav.links")}</p>
 
           <ul class="mt-8 space-y-4 text-sm">
+            <li>
+              <a class="text-gray-700 transition font-body capitalize hover:text-true-blue" href="https://forms.gle/2XXPxA5XtAQqw4bZ8" target="_blank">
+                PQRS
+              </a>
+            </li>
             {
               footerData[2].items.map((item) => (
                 <li>
@@ -154,7 +159,7 @@ const footerData = [
             <li
               class="flex sm:justify-start items-center justify-center  gap-1.5"
             >
-            <img src="/src/icons/whatsapp.svg" alt="" width={20} height={20}  >
+            <img src="/whatsapp.svg" alt="" width={20} height={20}  >
 
               <a href="https://api.whatsapp.com/send/?phone=573242016401&text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios">
                 <span class=" p-1 font-body">+57 314 309 7683</span>

@@ -21,8 +21,8 @@ const menuItems = [
         <div class="lg:flex lg:items-center lg:justify-between">
             <!-- Logo -->
             <div class="flex items-center justify-between">
-                <a href="/">
-                    <img class="w-auto h-10 sm:h-12" src="/src/assets/logo_wesell_dos.svg" alt="Logo de WESELL">
+                <a href={localizePath("/") }>
+                    <img class="w-auto h-10 sm:h-12" src="/logo_wesell_dos.svg" alt="Logo de WESELL">
                 </a>
 
                 <!-- Mobile Menu Toggle -->
@@ -67,7 +67,7 @@ const menuItems = [
                 <a href="#" class="text-true-blue  transition-colors duration-300 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook Logo">
                     <Icon name="facebook" size={20} />
                 </a>
-                <a href="#" class="text-true-blue  transition-colors duration-300 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Instagram Logo">
+                <a target="_blank" href="https://www.instagram.com/wesell_trading_group" class="text-true-blue  transition-colors duration-300 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Instagram Logo">
                     <Icon name="instagram" size={20} />
                 </a>
             </div>

@@ -22,7 +22,7 @@
         "sure": "Cargo Insurance",
         "per": "Personalized Services",
         "mail": "Your email address",
-        "btn": "Get Information",
+        "btn": "Get a quote",
         "cnl": "Cancel"
     },
     "cta":{
@@ -61,7 +61,16 @@
     "subtitle": "Innovation and Efficiency in Global Movement",
     "msg-one": "Our office in Cartagena specializes in maritime and port logistics. With modern infrastructure and a highly qualified team, we ensure efficient management of cargo and operations in one of the region's most important ports.",
     "msg-two": "Our office in Bogotá stands out for its land and air logistics, offering comprehensive solutions for national and international distribution. Strategically located, we facilitate connectivity and access to global markets."
-}
+},
+"blog":{
+        "main" : "Explore",
+        "title":"Don't miss our latest updates!",
+        "subtitle":"Read the most recent blog posts now!",
+        "btn":"Read more",
+        "btn-all":"View all",
+        "art":"Latest articles and news"
+    }
+
 
 
    
