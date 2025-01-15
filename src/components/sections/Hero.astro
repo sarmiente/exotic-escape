@@ -4,29 +4,69 @@ import FormButton from "../buttons/FormButton.astro";
 import { t } from "i18next";
 
 ---
-<div class="relative flex h-[90vh] bg-true-blue ">
-    <!-- Sección de contenido -->
-    <div class="flex flex-col justify-center px-8 space-y-6 text-white lg:w-1/2">
-      <h1 class="text-4xl font-hero lg:text-5xl uppercase">
-        {t("nav.msg")}
-      </h1>
-      <p class="text-lg lg:text-xl capitalize">
-        {t("nav.sub")}
-      </p>
-        <FormButton />
-    </div>
-  
-    <!-- Sección de imagen con clip diagonal -->
-    <div class="hidden md:flex relative w-full lg:w-1/2">
-           
-      <div class="absolute inset-0 bg-cover bg-center" 
-        style="background-image: url('/hero.svg');">
-        <div class="flex gap-1 items-center absolute bottom-2 right-2 bg-rich-black bg-opacity-75 text-white text-xs px-2 py-1 rounded-lg">
-          <Icon name="location" class="text-red-600" />
-          <p class="font-body capitalize">Bukit Merah, Singapore</p>
+
+<div class="relative flex h-[90vh]">
+  <!-- Sección de contenido -->
+  <div class="bg-true-blue w-full flex flex-col justify-center px-8 space-y-6 text-white lg:w-2/3">
+    <h1 class="text-4xl font-hero lg:text-5xl uppercase">
+      {t("nav.msg")}
+    </h1>
+    <p class="text-lg lg:text-xl capitalize">
+      {t("nav.sub")}
+    </p>
+    <FormButton />
+  </div>
+
+  <!-- Sección de slider -->
+  <div class="hidden relative w-1/2 md:flex swiper overflow-hidden">
+    <div class="swiper-wrapper flex">
+      <!-- Slide 1 -->
+      <div class="swiper-slide w-full h-full bg-cover bg-center bg-[url('/hero_full.svg')]">
+        <div class="bg-rich-black w-fit flex p-2 rounded-br-lg">
+          <Icon name="location" class="text-red-600 items-center" />
+          <p class="font-body capitalize text-white text-xs">Hamburg, Deutschland</p>
         </div>
       </div>
-      
+  
+      <!-- Slide 2 -->
+      <div class="swiper-slide w-full h-full bg-cover bg-center bg-[url('/hero_full_dos.svg')]">
+        <div class="bg-rich-black w-fit flex p-2 rounded-br-lg">
+          <Icon name="location" class="text-red-600 items-center" />
+          <p class="font-body capitalize text-white text-xs">Bukit Merah, Singapore</p>
+        </div>
+      </div>
+  
+      <!-- Slide 3 -->
+      <div class="swiper-slide w-full h-full bg-cover bg-center bg-[url('/hero_full_tres.svg')]">
+        <div class="bg-rich-black w-fit flex p-2 rounded-br-lg">
+          <Icon name="location" class="text-red-600 items-center" />
+          <p class="font-body capitalize text-white text-xs">Cartagena de Indias, Colombia</p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide w-full h-full bg-cover bg-center bg-[url('/hero_full_four.svg')]">
+        <div class="bg-rich-black w-fit flex p-2 rounded-br-lg">
+          <Icon name="location" class="text-red-600 items-center" />
+          <p class="font-body capitalize text-white text-xs">Valparaíso, Chile</p>
+        </div>
+      </div>
     </div>
   </div>
+
+
+
+</div>
+<script is:inline defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+
+  // @ts-nocheck
+  const swiper = new Swiper('.swiper', {
+    autoplay: {
+    delay: 5000,
+  },
+    direction: "horizontal",
+    loop: true,
   
+  });
+</script>

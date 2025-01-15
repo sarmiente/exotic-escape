@@ -33,7 +33,7 @@ const menuItems = [
             <div 
                 x-cloak 
                 :class="[isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full']" 
-                class="absolute inset-x-0 z-20 flex-1 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:static lg:w-auto lg:flex lg:items-center lg:justify-center lg:bg-transparent lg:translate-x-0 lg:opacity-100">
+                class="absolute inset-x-0 z-20 flex-1 w-full h-1/2 px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 lg:static lg:w-auto lg:flex lg:items-center lg:justify-center lg:bg-transparent lg:translate-x-0 lg:opacity-100">
                 
                 <!-- Menu Items -->
                 <div class="flex flex-col text-rich-black capitalize dark:text-gray-300 lg:flex lg:flex-row items-center lg:space-x-8">
@@ -45,7 +45,8 @@ const menuItems = [
                        </a>
                    ))}
                 </div>
-                <div class="lg:hidden flex justify-center text-center items-center space-x-4 pt-4">
+                 <!-- Social Media Logos MOBILE -->
+                <div class="lg:hidden flex justify-center text-center items-center space-x-4 pt-10 ">
                     <a href="#" class="text-true-blue transition-colors duration-300 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="LinkedIn Logo">
                       <Icon name="linkedin" size={20} />
                     </a>
@@ -59,7 +60,7 @@ const menuItems = [
                   
             </div>
 
-            <!-- Social Media Logos -->
+            <!-- Social Media Logos DESKTOP -->
             <div class="hidden lg:flex lg:items-center lg:space-x-4">
                 <a href="#" class="text-true-blue transition-colors duration-300 transform dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="LinkedIn Logo">
                     <Icon name="linkedin" size={20} />

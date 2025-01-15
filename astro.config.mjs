@@ -7,8 +7,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
-  site: "http://localhost:4321/",
+  site: "https://wesell.com.co",
   image: {
     remotePatterns: [{ protocol: "https" }],
   },

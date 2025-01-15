@@ -5,15 +5,16 @@ import LanguagePicker from "../components/LanguagePicker.astro";
 import "../../src/styles/globals.css"
 import Whatsapp from "../components/buttons/Whatsapp.astro";
 import BaseHead from "../components/meta/BaseHead.astro";
+const { title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead />
+		<BaseHead title={title} />
 	</head>
-	<body class="min-h-screen flex flex-col">
-		<Navbar />
+	<body>
+		<Navbar  />
 		<LanguagePicker />
 		<slot />
 		<Whatsapp />

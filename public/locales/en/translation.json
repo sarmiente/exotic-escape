@@ -23,7 +23,8 @@
         "per": "Personalized Services",
         "mail": "Your email address",
         "btn": "Get a quote",
-        "cnl": "Cancel"
+        "quote": "Cotizar"
+    
     },
     "cta":{
         "name": "Name / Company",
@@ -32,7 +33,8 @@
         "msg": "Leave us a message. How can we assist you?",
         "privacy": "I agree to the privacy policies",
         "link": "Click to view",
-        "btn": "Submit"
+        "btn": "Submit",
+            "cnl": "Cancel"
     },
    "services": {
     "title": "Comprehensive Solutions for Your Logistics Needs",

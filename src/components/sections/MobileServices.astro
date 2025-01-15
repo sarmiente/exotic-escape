@@ -1,0 +1,139 @@
+---
+import ModalForm from "../../components/modal/ModalForm.astro";
+import { t } from "i18next";
+
+
+const services = [
+  {
+    title: t("nav.inter"),
+    subtitle: t("services.sub-one"),
+    image: "/ship_port.svg",
+    content: t("services.one")
+  },
+  {
+    title: t("nav.docs"),
+    subtitle: t("services.sub-two"),
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: t("services.two")
+  },
+  {
+    title: t("nav.distr"),
+    subtitle: t("services.sub-three"),
+    image: "https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff?q=80&w=2090&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: t("services.three")
+  },
+  {
+    title: t("nav.cons"),
+    subtitle: t("services.sub-four"),
+    image: "https://images.unsplash.com/photo-1554902843-260acd0993f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: t("services.four")
+  },
+  {
+    title: t("nav.sure"),
+    subtitle: t("services.sub-five"),
+    image: "https://images.unsplash.com/photo-1605732562742-3023a888e56e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: t("services.five")
+  },
+  {
+    title: t("nav.per"),
+    subtitle: t("services.sub-six"),
+    image: "https://images.unsplash.com/photo-1721937127582-ed331de95a04?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: t("services.six")
+  },
+];
+---
+
+<section id="services" class=" md:hidden bg-gray-50">
+    <div class="mx-auto px-10 py-12">
+      
+      <!-- Título y detalles del post -->
+      <div class="text-center mb-12 space-y-6">
+        
+        <p class="uppercase font-body">
+            {t("nav.services")}
+        </p>
+        <h1
+          class="text-2xl lg:text-4xl font-hero mb-4 text-oxford-blue dark:text-white"
+        >
+          {t("services.title")}
+        </h1>
+        <p class="font-body">
+            {t("services.subtitle")}
+        </p>
+      </div>
+
+
+   
+  <!-- Sección de slider -->
+
+     <!-- Modal Card -->
+     <div class="swiper rounded-xl"  x-data="{modalIsOpen: false}">
+
+      <ul class="swiper-wrapper mx-auto "
+    >
+      {services.map((service) => (
+        <li class="swiper-slide h-96 w-full group relative block bg-rich-black  rounded-xl">
+            <img
+            alt="Fotos de servicios de transporte nautico"
+            src={service.image}
+            class="absolute rounded-xl inset-0 h-96 w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+          />
+
+          <div class="relative p-6 lg:p-8">
+            <p class="text-xs font-medium uppercase tracking-widest text-white">
+              {service.subtitle}
+            </p>
+
+            <p class="text-xl font-hero text-white sm:text-2xl">
+              {service.title}
+            </p>
+
+            
+          </div>
+          <div class="mt-24 p-4 lg:p-8" >
+              <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 space-y-2">
+                <p class="text-sm font-body text-white">{service.content}</p>
+                <button x-on:click="modalIsOpen = true" type="button" class="cursor-pointer whitespace-nowrap rounded-md bg-true-blue px-4 py-2 text-center text-sm font-medium tracking-wide text-neutral-100 transition hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black active:opacity-100 active:outline-offset-0 dark:bg-white dark:text-black dark:focus-visible:outline-white">{t("nav.quote")}</button>
+              </div>
+            </div>
+        </li>
+      ))}
+      
+    </ul>
+        
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+            <ModalForm  />
+          
+  </div>
+ 
+
+
+
+
+
+
+
+    </div>
+    
+</section>
+
+  
+<script is:inline defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+
+  // @ts-nocheck
+  const swiper = new Swiper('.swiper', {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    autoplay: {
+    delay: 5000,
+  },
+    direction: "horizontal",
+    loop: true,
+    
+  
+  });
+</script>

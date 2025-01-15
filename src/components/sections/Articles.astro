@@ -10,7 +10,7 @@ const options = { year: 'numeric', month: 'short', day: 'numeric' };
 
 ---
 
-<section class="container mx-auto px-4 py-16">
+<section class="container mx-auto px-8 py-16">
     <div class="text-center space-y-6">
         <h1 class="font-body uppercase dark:text-white">
           {t("blog.main")}
@@ -24,7 +24,7 @@ const options = { year: 'numeric', month: 'short', day: 'numeric' };
     </div>
   <div class="grid grid-cols-1 gap-12 md:grid-cols-2 mt-14 xl:grid-cols-3">
    {
-    posts.slice(0,3).map((post) => {
+    posts.slice(0, 3).map((post) => {
         {/* Formato para fecha en el card de los articulos */}
         const pubDate = new Date(post.data.pubDate);
         const formattedDate = pubDate.toLocaleDateString('en-US', options);
@@ -50,7 +50,7 @@ const options = { year: 'numeric', month: 'short', day: 'numeric' };
                       href="#"
                       class="text-lg  font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
                     >
-                      Sarpin Agency
+                      Autor
                     </a>
                     <p class="text-sm text-gray-500 dark:text-gray-400">
                         {formattedDate}
