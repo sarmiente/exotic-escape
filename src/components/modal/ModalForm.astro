@@ -3,42 +3,36 @@ import { t } from "i18next";
 import {Icon} from "astro-icon/components"
 const services = [
   {
-    id: 1,
     title: t("nav.inter"),
     subtitle: t("services.sub-one"),
     image: "/ship_port.svg",
     content: t("services.one")
   },
   {
-    id: 2,
     title: t("nav.docs"),
     subtitle: t("services.sub-two"),
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: t("services.two")
   },
   {
-    id: 3,
     title: t("nav.distr"),
     subtitle: t("services.sub-three"),
     image: "https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff?q=80&w=2090&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: t("services.three")
   },
   {
-    id: 4,
     title: t("nav.cons"),
     subtitle: t("services.sub-four"),
     image: "https://images.unsplash.com/photo-1554902843-260acd0993f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: t("services.four")
   },
   {
-    id: 5,
     title: t("nav.sure"),
     subtitle: t("services.sub-five"),
     image: "https://images.unsplash.com/photo-1605732562742-3023a888e56e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: t("services.five")
   },
   {
-    id: 6,
     title: t("nav.per"),
     subtitle: t("services.sub-six"),
     image: "https://images.unsplash.com/photo-1721937127582-ed331de95a04?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -83,22 +77,36 @@ const services = [
       </button>
     </div>
 
-    <div class="p-3">
+    <div class="p-6 ">
       <div
-        class="relative max-w-3xl h-auto flex flex-wrap gap-6 rounded-tr-3xl border border-gray-100 sm:flex-nowrap sm:gap-0"
+        class="bg-gray-50 relative max-w-3xl h-auto flex flex-wrap gap-6 rounded-3xl border border-gray-100 sm:flex-nowrap sm:gap-0"
       >
-        <div class="w-full text-center lg:w-1/2 swiper">
-        <div class="swiper-wrapper w-full">
+        <div class="w-full text-center lg:w-1/2 swiper rounded-xl">
+        <div class="swiper-wrapper w-full rounded-xl">
           {
             services.map((item) => (
-            <div class="swiper-slide ">
+            <div class="swiper-slide p-2 md:h-full rounded-xl">
             
-            <img
-            alt="Fotos de servicios de transporte nautico"
-            src={item.image}
-            class="relative inset-0 w-full h-96 object-cover rounded-xl hidden sm:flex"
+            <li class="group relative rounded-xl">
+              <img
+                  alt="Fotos de servicios de transporte nautico"
+                  src={item.image}
+                  class="absolute w-full h-96 object-cover opacity-75 hidden sm:flex rounded-xl"
           />
+          <div class="relative p-6 lg:p-8 bg-rich-black opacity-75 transition-opacity rounded-xl">
+              <p class="text-xs font-medium uppercase tracking-widest text-white">
+                {item.subtitle}
+              </p>
+  
+              <p class="text-xl font-hero text-white sm:text-2xl">
+                {item.title}
+              </p>
+          </div>
+            </li>
+  
+              
             </div>
+            
             ))
           }
         
@@ -113,7 +121,8 @@ const services = [
             <div>
               <label class="sr-only" for="name">{t("cta.name")}</label>
               <input
-                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                required
+                class="w-full rounded-lg border-gray-200 p-3 text-sm font-body"
                 placeholder={t("cta.name")}
                 type="text"
                 id="name"
@@ -125,7 +134,8 @@ const services = [
               <div>
                 <label class="sr-only" for="email">{t("cta.mail")}</label>
                 <input
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                required
+                  class="w-full rounded-lg border-gray-200 p-3 text-sm font-body"
                   placeholder={t("cta.mail")}
                   type="email"
                   id="email"
@@ -135,7 +145,8 @@ const services = [
               <div>
                 <label class="sr-only" for="phone">{t("cta.phone")}</label>
                 <input
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  required
+                  class="w-full rounded-lg border-gray-200 p-3 text-sm font-body"
                   placeholder={t("cta.phone")}
                   type="tel"
                   id="phone"
@@ -147,8 +158,9 @@ const services = [
             <div>
               <label class="sr-only" for="message">{t("contact.title")}</label>
               <textarea
-                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                class="w-full rounded-lg border-gray-200 p-3 text-sm form-textarea font-body"
                 placeholder={t("cta.msg")}
+                
                 rows="4"
                 id="message"></textarea>
             </div>
@@ -157,7 +169,7 @@ const services = [
             <div class="mt-4">
               <button
                 type="submit"
-                class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+                class="inline-block w-full rounded-lg bg-true-blue hover:bg-oxford-blue px-5 py-3 font-medium text-white sm:w-auto"
               >
                 {t("cta.btn")}
               </button>
@@ -167,7 +179,7 @@ const services = [
       </div>
       <!-- Dialog Footer -->
       <div
-        class="flex flex-col-reverse justify-between gap-2 border-t border-neutral-300 bg-neutral-50/60 p-4 dark:border-neutral-700 dark:bg-neutral-950/20 sm:flex-row sm:items-center md:justify-end"
+        class="flex flex-col-reverse justify-between gap-2  border-neutral-300 bg-neutral-50/60 p-4 dark:border-neutral-700 dark:bg-neutral-950/20 sm:flex-row sm:items-center md:justify-end"
       >
         <button
           @click="modalIsOpen = false"
@@ -179,7 +191,7 @@ const services = [
       </div>
     </div>
   </div>
-</div>
+
 <script is:inline defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
 
@@ -189,7 +201,7 @@ const services = [
     delay: 5000,
   },
     direction: "horizontal",
-    loop: true,
+    
   
   });
 </script>

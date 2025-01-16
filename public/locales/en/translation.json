@@ -22,8 +22,8 @@
         "sure": "Cargo Insurance",
         "per": "Personalized Services",
         "mail": "Your email address",
-        "btn": "Get a quote",
-        "quote": "Cotizar"
+        "btn": "Get Information",
+        "quote": "Quote"
     
     },
     "cta":{
@@ -33,8 +33,9 @@
         "msg": "Leave us a message. How can we assist you?",
         "privacy": "I agree to the privacy policies",
         "link": "Click to view",
+        "leave": "Leave us your information",
         "btn": "Submit",
-            "cnl": "Cancel"
+        "cnl": "Cancel"
     },
    "services": {
     "title": "Comprehensive Solutions for Your Logistics Needs",

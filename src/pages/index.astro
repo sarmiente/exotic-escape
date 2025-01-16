@@ -2,21 +2,18 @@
 import { changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/sections/Hero.astro";
-import DeskServices from "../components/sections/DeskServices.astro";
 import Who from "../components/sections/Who.astro";
 import Locations from "../components/sections/Locations.astro";
 import Articles from "../components/sections/Articles.astro";
-import MobileServices from "../components/sections/MobileServices.astro";
-
+import Services from "../components/ui/Services.astro";
 
 changeLanguage("es");
 
 ---
 
-<Layout title="WESELL">
+<Layout title="WESELL - Trading Group">
 	<Hero />
-	<DeskServices />
-	<MobileServices />
+	<Services  />
 	<Who />
 	<Locations />
 	<Articles />
