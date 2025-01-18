@@ -82,7 +82,7 @@ const services = [
         class="bg-gray-300 p-0 sm:p-6 relative max-w-3xl h-auto flex flex-wrap gap-2 rounded-3xl border border-gray-100 sm:flex-nowrap "
       >
         <div class="w-full text-center lg:w-1/2 swiper rounded-xl">
-        <div class="swiper-wrapper w-full rounded-xl">
+        <div class="swiper-wrapper w-full rounded-xl hidden sm:flex">
           {
             services.map((item) => (
             <div class="swiper-slide p-2 md:h-full rounded-xl">
@@ -91,7 +91,7 @@ const services = [
               <img
                   alt="Fotos de servicios de transporte nautico"
                   src={item.image}
-                  class="absolute w-full h-96 object-cover opacity-75 hidden sm:flex rounded-xl"
+                  class="absolute w-full h-96 object-cover opacity-75  rounded-xl"
           />
           <div class="relative p-6 lg:p-8 bg-rich-black opacity-75 transition-opacity rounded-xl ">
               <p class="text-xs font-medium uppercase tracking-widest text-white">
