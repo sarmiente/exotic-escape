@@ -10,18 +10,29 @@ changeLanguage("es");
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<Layout title="Ultimos articulos">
-  <main class="bg-gray-50 dark:bg-slate-800 pt-36">
-    <section class="pb-16">
+<Layout title=  {t("blog.art")}>
+  <main  class="bg-gray-50 pt-36" id="busqueda" >
+    <section class="pb-16"  >
 		
       <div class="text-center space-y-6">
         
           <p class="text-3xl text-oxford-blue font-hero uppercase sm:text-4xl">
             {t("blog.art")}
           </p>
+
+          <!--Input de busqueda en blog -->
+          <div  class="relative w-1/2 mx-auto">
+            <div class="absolute left-4 top-3 text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+            
+           <input class="search w-full rounded-full hover:shadow-lg focus:shadow-lg focus:outline-0 p-2.5 border pl-10" type="search" placeholder="Buscar por titulo">
+        </div>
          
     </div>
-      <ul class="grid gap-8 max-w-6xl mx-auto px-4 sm:grid-cols-2 lg:grid-cols-3 py-12">
+      <ul class="grid gap-8 max-w-6xl mx-auto px-4 sm:grid-cols-2 lg:grid-cols-3 py-12 list">
         {posts.map((post) => (
           <li class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <a href={`${localizePath("/blog")}/${post.slug}/`} class="block h-full">
@@ -33,7 +44,7 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueO
                 class="w-full h-48 object-cover"
               />
               <div class="p-6">
-                <h4 class="text-xl font-heading text-gray-900  mb-3">
+                <h4 class="titulo text-xl font-heading text-gray-900  mb-3">
                   {t(post.data.title)}
                 </h4>
                 
@@ -57,3 +68,13 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueO
     </section>
   </main>
 </Layout>
+
+<script>
+  // @ts-nocheck
+ var options = {
+  valueNames: ['titulo'],
+  listClass: 'list', // Clase que contiene los elementos
+    searchClass: 'search',
+ };
+ var Search = new List('busqueda', options)
+</script>

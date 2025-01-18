@@ -1,10 +1,15 @@
 ---
+// @ts-nocheck
 import { Icon } from "astro-icon/components";
 import {t} from "i18next"
+import {sendEmail} from "../../action.js"
  
 ---
 
-<form action="" class="mt-12">
+<form action={sendEmail}
+      method="POST"
+      class="mt-12">
+
     <div class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md focus-within:ring-2 dark:border-white/10 dark:bg-dark dark:text-white md:p-2 lg:pr-3">
       <!-- Icono de Email -->
       <div class="py-3 pl-4 lg:pl-5">
@@ -14,6 +19,7 @@ import {t} from "i18next"
       <!-- Input de Email -->
       <input 
         required 
+        name="email"
         aria-label="your email" 
         autocomplete="email" 
         placeholder={t("nav.mail")} 
@@ -24,7 +30,7 @@ import {t} from "i18next"
       <!-- Botón de Enviar -->
       <button 
         type="submit" 
-        title="Start buying" 
+        title="Obtener Informacion" 
         class="relative ml-auto h-12 w-14 rounded-full before:absolute before:inset-0 before:rounded-full before:bg-oxford-blue before:transition before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight sm:w-auto sm:px-6 hover:scale-105"
       >
         <!-- Contenedor del botón -->
