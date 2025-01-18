@@ -12,26 +12,26 @@ const footerData = [
   {
     title: t("nav.about"),
     items: [
-      { text: t("nav.who-we-are"), href : localizePath("/quienes-somos") },
-      { text: t("nav.our-team"), href : localizePath("/nuestro-equipo") },
+      { text: t("nav.who-we-are"), href : localizePath("/nosotros") },
+      { text: t("nav.our-team"), href : localizePath("/nosotros") },
     ],
   },
   {
     title: t("nav.services"),
     items: [
       { text: t("nav.inter"), href : localizePath("#services") },
-      { text: t("nav.docs"), href : localizePath("/") },
-      { text: t("nav.distr"), href : localizePath("/") },
-      { text: t("nav.cons"), href : localizePath("/") },
-      { text: t("nav.sure"), href : localizePath("/") },
+      { text: t("nav.docs"), href : localizePath("#services") },
+      { text: t("nav.distr"), href : localizePath("#services") },
+      { text: t("nav.cons"), href : localizePath("#services") },
+      { text: t("nav.sure"), href : localizePath("#services") },
     ],
   },
   {
     title: "Enlaces útiles",
     items: [
       
-      { text: t("nav.support"), href : "/contact" },
-      { text: "Blog", href : "#" }
+      { text: t("nav.support"), href : localizePath("/contacto") },
+      { text: "Blog", href : localizePath("/blog") }
     ],
   },
 ];
@@ -161,7 +161,7 @@ const footerData = [
             >
             <img src="/whatsapp.svg" alt="" width={20} height={20}  >
 
-              <a href="https://api.whatsapp.com/send/?phone=573143097683&text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios">
+              <a target="_blank" href="https://api.whatsapp.com/send/?phone=573143097683&text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios">
                 <span class=" p-1 font-body">+57 314 309 7683</span>
               </a>
             </li>
@@ -172,7 +172,7 @@ const footerData = [
             >
               <Icon class="h4 w-4 " name="envelop_vector" />
 
-              <a href="mailto:pricing@wesell.com.co">
+              <a target="_blank" href="mailto:pricing@wesell.com.co">
                 <span class="text-white p-1.5 font-body text-xs bg-oxford-blue rounded-2xl">pricing@wesell.com.co</span>
               </a>
             </li>

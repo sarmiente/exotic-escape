@@ -1,11 +1,66 @@
 ---
 import { changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
+import {t} from "i18next";
 
 changeLanguage("en");
 ---
 
-<Layout>
-<div class="min-h-screen"></div>
+<Layout title={t("nav.about")}>
+
+<section class="px-4 py-24 mx-auto max-w-7xl">
+    <div class="relative ">
+        <img class="object-cover w-full h-56 sm:h-96 rounded-2xl" src="https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-50 rounded-2xl"></div>
+      </div>
+    <div class="pt-8 sm:text-left text-center">
+        <p class="text-center uppercase font-body md:text-left">Who we are</p>
+
+        <h1 class="mb-4 text-center text-2xl font-hero text-gray-800 sm:text-3xl md:mb-6 md:text-left">Our History</h1>
+
+        <p class="mb-5 text-base font-body text-center text-gray-600 sm:text-left md:text-lg">
+            The idea of Wesell was born from observing an international logistics market full of opportunities. Through collaboration and synergy among partners, the team committed to offering effective and responsible solutions that optimize the transportation and trade of goods while promoting sustainability and economic development in the communities where it operates.<br /><br />
+        
+            Backed by the accumulated experience of its founders and a strong commitment to innovation, we position ourselves as a benchmark in the industry. At Wesell, we believe that teamwork is key to building strong and trustworthy relationships with our clients, standing out for a personalized and efficient service that exceeds expectations.<br /><br />
+        
+            Together, as a versatile and dynamic team, we are ready to face the challenges of the market and become the strategic ally that companies need to achieve their goals in international trade.
+        </p>
+        
+
+       
+      </div>
+
+
+    <div class="mt-10 grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+      <div>
+        <h2 class="mb-4 text-2xl font-hero tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl">
+            Mision
+        </h2>
+        <p class="mb-5 text-base font-body text-center text-gray-600 sm:text-left md:text-lg">
+            At Wesell, our mission is to provide effective and reliable freight and logistics solutions, facilitating international trade for our clients. We strive to optimize every stage of the transportation and international logistics process, ensuring that goods arrive at their destination safely and on time, with a focus on excellence, innovation, and ethics.
+        </p>
+       
+      </div>
+      <div class="w-full h-full rounded-2xl">
+        <img class="object-cover w-full h-56 sm:h-96 rounded-2xl" src="https://images.unsplash.com/photo-1670121180530-cfcba4438038?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+      </div>
+    </div>
+
+    <div class="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+      <div class="order-none md:order-2">
+        <h2 class="mb-4 text-2xl font-hero tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl">
+            Vision
+        </h2>
+        <p class="mb-5 text-base font-body text-center text-gray-600 sm:text-left md:text-lg">
+            To be the leading freight forwarder and trading company at a national and international level, recognized for our innovation, efficiency, dedication, and client-oriented ethics. We aspire to transform the logistics and foreign trade sector through advanced technologies and a proactive approach that simplifies supply chains and ensures a competitive advantage for our clients.
+        </p>
+       
+      </div>
+      <div class="w-full h-full rounded-2xl">
+        <img class="object-cover w-full h-56 sm:h-96 rounded-2xl" src="https://images.unsplash.com/photo-1592963219838-6045ccbe0563?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+      </div>
+    </div>
+  </section>
+  
 
 </Layout>

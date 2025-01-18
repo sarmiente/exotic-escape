@@ -27,9 +27,12 @@
     
     },
     "cta":{
+        "title" : "Contact us",
+        "address" : "Address",
         "name": "Name / Company",
         "mail": "Email",
         "phone": "Phone",
+        "men": "Mensaje",
         "msg": "Leave us a message. How can we assist you?",
         "privacy": "I agree to the privacy policies",
         "link": "Click to view",
@@ -72,9 +75,5 @@
         "btn":"Read more",
         "btn-all":"View all",
         "art":"Latest articles and news"
-    }
-
-
-
-   
+    }   
 }

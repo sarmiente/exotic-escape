@@ -16,7 +16,7 @@
     html {
       scroll-behavior: smooth;
       scrollbar-width: thin; /* Firefox */
-      scrollbar-color: #0466C8 #F3F4F6; /* Colores en Firefox */
+      scrollbar-color: #002855 #F3F4F6; /* Colores en Firefox */
     }
   
     html::-webkit-scrollbar {
@@ -29,12 +29,12 @@
     }
   
     html::-webkit-scrollbar-thumb {
-      background-color: #0466C8; /* Color del thumb */
+      background-color: #002855; /* Color del thumb */
       border-radius: 4px; /* Bordes redondeados */
       border: 2px solid #F3F4F6; /* Margen interno para que el thumb no ocupe todo */
     }
   
     html::-webkit-scrollbar-thumb:hover {
-      background-color: #0466C8; /* Cambia el color al pasar el cursor */
+      background-color: #002855; /* Cambia el color al pasar el cursor */
     }
   }

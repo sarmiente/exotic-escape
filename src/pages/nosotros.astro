@@ -1,11 +1,67 @@
 ---
 import { changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
+import {t} from "i18next";
 
 changeLanguage("es");
 ---
 
-<Layout>
-<div class="min-h-screen"></div>
+<Layout title={t("nav.about")}>
+
+<section class="px-4 py-24 mx-auto max-w-7xl">
+    <div class="relative ">
+        <img class="object-cover w-full h-56 sm:h-96 rounded-2xl" src="https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-50 rounded-2xl"></div>
+      </div>
+    <div class="pt-8 sm:text-left text-center">
+        <p class="text-center uppercase font-body md:text-left">Quiénes Somos</p>
+
+        <h1 class="mb-4 text-center text-2xl font-hero text-gray-800 sm:text-3xl md:mb-6 md:text-left">Nuestra Historia</h1>
+
+        <p class="mb-5 text-base font-body text-center text-gray-600 sm:text-left md:text-lg">
+            La idea de Wesell nació al observar un mercado logístico internacional lleno de oportunidades. A través de la colaboración y la sinergia entre los socios, el equipo se comprometió a ofrecer soluciones efectivas y responsables que optimicen el transporte y comercio de mercancías que promuevan la sostenibilidad y el desarrollo económico en las comunidades donde opera.<br /><br />
+
+            El respaldo de la experiencia acumulada por los fundadores y un firme compromiso hacia la innovación nos posicionan como un referente en la industria. En Wesell, creemos que el trabajo en equipo es clave para construir relaciones sólidas y de confianza con nuestros clientes, destacándonos por un servicio personalizado y eficiente que supera las expectativas. <br /><br />
+
+            Juntos, como un equipo versátil y dinámico, estamos listos para enfrentar los retos del mercado y convertirnos en el aliado estratégico que las empresas necesitan para alcanzar sus objetivos en el comercio internacional.
+
+         
+        </p>
+
+       
+      </div>
+
+
+    <div class="mt-10 grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+      <div>
+        <h2 class="mb-4 text-2xl font-hero tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl">
+            Visión
+        </h2>
+        <p class="mb-5 text-base font-body text-center text-gray-600 sm:text-left md:text-lg">
+            En Wesell, nuestra misión es proporcionar soluciones de carga y logística efectivas y confiables, facilitando el comercio internacional para nuestros clientes. Nos esforzamos por optimizar cada etapa del proceso de transporte y logistica internacional, asegurando que las mercancías lleguen a su destino de manera segura y puntual, con un enfoque en la excelencia, innovación y ética.
+        </p>
+       
+      </div>
+      <div class="w-full h-full rounded-2xl">
+        <img class="object-cover w-full h-56 sm:h-96 rounded-2xl" src="https://images.unsplash.com/photo-1670121180530-cfcba4438038?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+      </div>
+    </div>
+
+    <div class="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+      <div class="order-none md:order-2">
+        <h2 class="mb-4 text-2xl font-hero tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl">
+            Misión
+        </h2>
+        <p class="mb-5 text-base font-body text-center text-gray-600 sm:text-left md:text-lg">
+            Ser el freight forwarder y trading company referente a nivel nacional e internacional, reconocido por nuestra innovación, eficiencia, dedicación y ética orientada al cliente. Aspiramos transformar el sector logístico y de comercio exterior a través de tecnologías avanzadas y un enfoque proactivo que simplifique las cadenas de suministro y garantice una ventaja competitiva para nuestros clientes.
+        </p>
+       
+      </div>
+      <div class="w-full h-full rounded-2xl">
+        <img class="object-cover w-full h-56 sm:h-96 rounded-2xl" src="https://images.unsplash.com/photo-1592963219838-6045ccbe0563?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+      </div>
+    </div>
+  </section>
+  
 
 </Layout>

@@ -26,6 +26,8 @@
     "quote": "Cotizar"
 },
 "cta":{
+    "title" : "Contáctanos",
+    "address" : "Dirección",
         "name": "Nombre / Empresa",
         "mail": "Correo electrónico",
         "phone": "Teléfono",
@@ -71,5 +73,4 @@
         "btn-all":"Ver todos",
         "art": "Artículos y noticias más recientes"
     }
-
 }
