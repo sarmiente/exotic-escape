@@ -12,7 +12,7 @@ import { t } from "i18next";
 
     <!-- Input de Email -->
     <input
-      id="emailInput" 
+    id="emailInput" 
       required
       name="email"
       aria-label="your email"
@@ -59,15 +59,15 @@ import { t } from "i18next";
     // Validar el campo de email
     const emailValue = emailInput.value.trim();
     if (!emailValue || !validateEmail(emailValue)) {
-      responseMessage.textContent = "Por favor, ingresa un correo electrónico válido.";
-      responseMessage.className = "text-center text-red-500 font-body";
+      responseMessage.textContent = "Please enter a valid email address.";
+      responseMessage.className = "text-center text-red-500";
       return;
     }
 
     try {
       // Mostrar un mensaje de carga mientras se procesa
-      responseMessage.textContent = "Enviando correo...";
-      responseMessage.className = "text-center font-body" ;
+      responseMessage.textContent = "Sending email...";
+      responseMessage.className = "text-center";
 
       // Enviar la solicitud al backend
       const res = await fetch("/api/resendEmail.json", {
@@ -78,27 +78,26 @@ import { t } from "i18next";
         body: JSON.stringify({
           from: "info@sarpin.agency", // Correo autorizado en Resend
           to: "info@sarpin.agency", // Tu correo corporativo
-          cc: "carlosarmientopinto@gmail.com",
-          subject: "Nuevo correo desde el formulario",
-          html: `<p>Has recibido un nuevo correo: <strong>${emailValue}</strong></p>`,
-          text: `Has recibido un nuevo correo: ${emailValue}`,
+          subject: "New email from the form",
+          html: `<p>You have received a new email: <strong>${emailValue}</strong></p>`,
+          text: `You have received a new email: ${emailValue}`,
         }),
       });
 
       // Manejar la respuesta
       const data = await res.json();
       if (res.ok) {
-        responseMessage.textContent = `¡Correo enviado con éxito! Enviaremos nuestro portafolio de servicios a tu correo: ${emailValue}`;
-        responseMessage.className = "text-white font-body";
+        responseMessage.textContent = `¡Email sent successfully! We will send our portfolio to your email: ${emailValue}`;
+        responseMessage.className = "text-white";
         emailInput.value = ""; // Limpiar el campo
       } else {
-        throw new Error(data.message || "Error desconocido.");
+        throw new Error(data.message || "Unknown error.");
       }
     } catch (error) {
       // @ts-ignore
-      responseMessage.textContent = `Hubo un error al enviar el correo. ${error.message}`;
-      responseMessage.className = "text-red-500 font-body";
-      console.error("Error al enviar el correo:", error);
+      responseMessage.textContent = `There was an error sending the email. ${error.message}`;
+      responseMessage.className = "text-red-500";
+      console.error("Error sending email:", error);
     }
   });
 

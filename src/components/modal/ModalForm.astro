@@ -116,7 +116,7 @@ const services = [
 
         <!-- Formulario -->
         <div class="w-full p-4 text-center lg:w-1/2">
-          <form action="/" class="space-y-6">
+          <form id="emailForm" action="/" class="space-y-6">
             <!-- Input de Nombre -->
             <div>
               <label class="sr-only" for="name">{t("cta.name")}</label>
@@ -182,6 +182,7 @@ const services = [
         class="flex flex-col-reverse justify-between gap-2  border-neutral-300 bg-neutral-50/60 p-4 dark:border-neutral-700 dark:bg-neutral-950/20 sm:flex-row sm:items-center md:justify-end"
       >
         <button
+        id="submitFormButton"
           @click="modalIsOpen = false"
           type="button"
           class="cursor-pointer whitespace-nowrap rounded-md px-4 py-2 text-center text-sm font-medium tracking-wide text-neutral-600 transition hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black active:opacity-100 active:outline-offset-0 dark:text-neutral-300 dark:focus-visible:outline-white"
@@ -204,4 +205,96 @@ const services = [
     
   
   });
+</script>
+<script> 
+const emailForm = document.getElementById("emailForm") as HTMLFormElement | null;
+const submitFormButton = document.getElementById("submitFormButton");
+const responseMessage = document.getElementById("responseMessage")!;
+
+if (emailForm) { // Check if emailForm is not null
+  submitFormButton?.addEventListener("click", async (event) => {
+    // Evitar el comportamiento por defecto del formulario
+    event.preventDefault();
+
+    // Limpiar mensajes anteriores
+    responseMessage.textContent = "";
+    responseMessage.className = "";
+
+    // Crear un objeto FormData con los datos del formulario
+    const formData = new FormData(emailForm);
+
+    // Validar el campo de email
+    const emailValue = formData.get("email");
+    if (typeof emailValue === 'string' && emailValue.trim()) {
+      const trimmedEmailValue = emailValue.trim();
+
+      if (!validateEmail(trimmedEmailValue)) {
+        responseMessage.textContent = "Por favor, ingresa un correo electrónico válido.";
+        responseMessage.className = "text-red-500";
+        return;
+      }
+
+      try {
+        // Mostrar un mensaje de carga mientras se procesa
+        responseMessage.textContent = "Enviando correo...";
+        responseMessage.className = "text-gray-600";
+
+        // Convertir FormData a JSON
+        const formDataJson = Object.fromEntries(formData.entries());
+
+        // Enviar la solicitud al backend
+        const res = await fetch("/api/resendEmail.json", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            from: "info@sarpin.agency", // Correo autorizado en Resend
+            to: "info@sarpin.agency", // Tu correo corporativo
+            subject: "Nuevo correo desde el formulario de Servicios",
+            html: `<p>Has recibido un nuevo correo:</p>
+                   <p><strong>Nombre / Empresa:</strong> ${formDataJson.name}</p>
+                   <p><strong>Email:</strong> ${formDataJson.email}</p>
+                   <p><strong>Teléfono:</strong> ${formDataJson.phone}</p>
+                   <p><strong>Mensaje:</strong> ${formDataJson.message}</p>`,
+            text: `Has recibido un nuevo correo:
+                   Nombre: ${formDataJson.name}
+                   Email: ${formDataJson.email}
+                   Teléfono: ${formDataJson.phone}
+                   Mensaje: ${formDataJson.message}`
+          }),
+        });
+
+        // Manejar la respuesta
+        const data = await res.json();
+        if (res.ok) {
+          responseMessage.textContent = `¡Correo enviado con éxito! Hemos recibido tu información.`;
+          responseMessage.className = "text-green-500";
+          emailForm.reset(); // Limpiar el formulario
+        } else {
+          throw new Error(data.message || "Error desconocido.");
+        }
+      } catch (error) {
+        if (error instanceof Error) {
+          responseMessage.textContent = `Hubo un error al enviar el correo. ${error.message}`;
+        } else {
+          responseMessage.textContent = `Hubo un error al enviar el correo. Error desconocido.`;
+        }
+        responseMessage.className = "text-red-500";
+        console.error("Error al enviar el correo:", error)
+      }
+    } else {
+      responseMessage.textContent = "Por favor, ingresa un correo electrónico válido.";
+      responseMessage.className = "text-red-500";
+    }
+  });
+}
+
+// Función para validar correos electrónicos
+function validateEmail(email: string) {
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailRegex.test(email);
+}
+
+
 </script>

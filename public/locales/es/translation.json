@@ -72,5 +72,12 @@
         "btn":"Leer más",
         "btn-all":"Ver todos",
         "art": "Artículos más recientes"
-    }
+    },
+    "form": {
+        "invalidEmail": "Por favor, ingresa un correo electrónico válido.",
+        "sending": "Enviando correo...",
+        "success": "¡Correo enviado con éxito! Enviaremos nuestro portafolio de servicios a tu correo: {{email}}",
+        "error": "Hubo un error al enviar el correo. {{message}}",
+        "unknownError": "Error desconocido."
+      } 
 }

@@ -75,5 +75,12 @@
         "btn":"Read more",
         "btn-all":"View all",
         "art":"Latest articles"
-    }   
+    },
+   "form": {
+    "invalidEmail": "Please enter a valid email address.",
+    "sending": "Sending email...",
+    "success": "Email sent successfully! We will send our portfolio to your email: {{email}}",
+    "error": "There was an error sending the email. {{message}}",
+    "unknownError": "Unknown error."
+  }
 }
