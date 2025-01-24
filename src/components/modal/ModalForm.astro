@@ -1,42 +1,48 @@
 ---
 import { t } from "i18next";
-import {Icon} from "astro-icon/components"
+import { Icon } from "astro-icon/components";
 const services = [
   {
     title: t("nav.inter"),
     subtitle: t("services.sub-one"),
-    image: "https://images.unsplash.com/photo-1606964212858-c215029db704?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: t("services.one")
+    image:
+      "https://images.unsplash.com/photo-1606964212858-c215029db704?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: t("services.one"),
   },
   {
     title: t("nav.docs"),
     subtitle: t("services.sub-two"),
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: t("services.two")
+    image:
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: t("services.two"),
   },
   {
     title: t("nav.distr"),
     subtitle: t("services.sub-three"),
-    image: "https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff?q=80&w=2090&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: t("services.three")
+    image:
+      "https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff?q=80&w=2090&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: t("services.three"),
   },
   {
     title: t("nav.cons"),
     subtitle: t("services.sub-four"),
-    image: "https://images.unsplash.com/photo-1554902843-260acd0993f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: t("services.four")
+    image:
+      "https://images.unsplash.com/photo-1554902843-260acd0993f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: t("services.four"),
   },
   {
     title: t("nav.sure"),
     subtitle: t("services.sub-five"),
-    image: "https://images.unsplash.com/photo-1605732562742-3023a888e56e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: t("services.five")
+    image:
+      "https://images.unsplash.com/photo-1605732562742-3023a888e56e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: t("services.five"),
   },
   {
     title: t("nav.per"),
     subtitle: t("services.sub-six"),
-    image: "https://images.unsplash.com/photo-1721937127582-ed331de95a04?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: t("services.six")
+    image:
+      "https://images.unsplash.com/photo-1721937127582-ed331de95a04?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: t("services.six"),
   },
 ];
 ---
@@ -60,7 +66,7 @@ const services = [
     x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity"
     x-transition:enter-start="opacity-0 scale-50"
     x-transition:enter-end="opacity-100 scale-100"
-    class="flex flex-col  gap-2 overflow-hidden rounded-md border border-neutral-300 bg-white text-neutral-600"
+    class="flex flex-col gap-2 overflow-hidden rounded-md border border-neutral-300 bg-white text-neutral-600"
   >
     <!-- Dialog Header -->
     <div
@@ -70,7 +76,6 @@ const services = [
         id="defaultModalTitle"
         class="font-semibold tracking-wide text-neutral-900"
       >
-        
       </h3>
       <button @click="modalIsOpen = false" aria-label="close modal">
         <Icon class="size-6" name="close" />
@@ -79,44 +84,50 @@ const services = [
 
     <div class="p-4">
       <div
-        class="bg-gray-300 p-0 sm:p-6 relative max-w-3xl h-auto flex flex-wrap gap-2 rounded-3xl border border-gray-100 sm:flex-nowrap "
+        class="bg-gray-300 p-0 sm:p-6 relative max-w-3xl h-auto flex flex-wrap gap-2 rounded-3xl border border-gray-100 sm:flex-nowrap"
       >
         <div class="w-full text-center lg:w-1/2 swiper rounded-xl">
-        <div class="swiper-wrapper w-full rounded-xl hidden sm:flex">
-          {
-            services.map((item) => (
-            <div class="swiper-slide p-2 md:h-full rounded-xl">
-            
-            <li class="group relative rounded-xl">
-              <img
-                  alt="Fotos de servicios de transporte nautico"
-                  src={item.image}
-                  class="absolute w-full h-96 object-cover opacity-75  rounded-xl"
-          />
-          <div class="relative p-6 lg:p-8 bg-rich-black opacity-75 transition-opacity rounded-xl ">
-              <p class="text-xs font-medium uppercase tracking-widest text-white">
-                {item.subtitle}
-              </p>
-  
-              <p class="text-xl font-hero text-white sm:text-2xl">
-                {item.title}
-              </p>
+          <div class="swiper-wrapper w-full rounded-xl hidden sm:flex">
+            {
+              services.map((item) => (
+                <div class="swiper-slide p-2 md:h-full rounded-xl">
+                  <li class="group relative rounded-xl">
+                    <img
+                      alt="Fotos de servicios de transporte nautico"
+                      src={item.image}
+                      class="absolute w-full h-96 object-cover opacity-75  rounded-xl"
+                    />
+                    <div class="relative p-6 lg:p-8 bg-rich-black opacity-75 transition-opacity rounded-xl ">
+                      <p class="text-xs font-medium uppercase tracking-widest text-white">
+                        {item.subtitle}
+                      </p>
+
+                      <p class="text-xl font-hero text-white sm:text-2xl">
+                        {item.title}
+                      </p>
+                    </div>
+                  </li>
+                </div>
+              ))
+            }
           </div>
-            </li>
-  
-              
-            </div>
-            
-            ))
-          }
-        
-        </div>
-          
         </div>
 
         <!-- Formulario -->
         <div class="w-full p-4 text-center lg:w-1/2">
-          <form id="emailForm" action="/" class="space-y-6">
+          <form 
+                method="POST"
+                id="formDos" 
+                data-astro-reload
+                class="needs-validation space-y-6">
+
+                 <!-- Add your Web3Forms Access Key -->
+                 <input
+                 type="hidden"
+                 name="access_key"
+                 value={import.meta.env.PUBLIC_ACCESS_KEY}
+               />
+                <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
             <!-- Input de Nombre -->
             <div>
               <label class="sr-only" for="name">{t("cta.name")}</label>
@@ -132,24 +143,27 @@ const services = [
             <!-- Inputs de Email y Teléfono -->
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
-                <label class="sr-only" for="email">{t("cta.mail")}</label>
+                <label for="email_address" class="sr-only" for="email">{t("cta.mail")}</label>
                 <input
-                required
+                  id="email_address"
+                  type="email"
+                  name="email"
+                  required
+                  pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/"
                   class="w-full rounded-lg border-gray-200 p-3 text-sm font-body"
                   placeholder={t("cta.mail")}
-                  type="email"
-                  id="email"
                 />
               </div>
 
               <div>
                 <label class="sr-only" for="phone">{t("cta.phone")}</label>
                 <input
-                  required
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm font-body"
-                  placeholder={t("cta.phone")}
-                  type="tel"
-                  id="phone"
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="+1 (555) 1234-567"
+                required
+                class="w-full rounded-lg border-gray-200 p-3 text-sm font-body"
                 />
               </div>
             </div>
@@ -158,11 +172,16 @@ const services = [
             <div>
               <label class="sr-only" for="message">{t("contact.title")}</label>
               <textarea
+                name="message"
                 class="w-full h-32 rounded-lg border-gray-200 p-3 text-sm form-textarea resize-none font-body"
                 placeholder={t("cta.msg")}
-                
-                
                 id="message"></textarea>
+              <div class="text-center py-2">
+                <label class="text-sm">
+                  <input required type="checkbox" name="terms" />
+                  {t("cta.privacy")}
+                </label>
+              </div>
             </div>
 
             <!-- Botón -->
@@ -173,16 +192,17 @@ const services = [
               >
                 {t("cta.btn")}
               </button>
+              
             </div>
+            <div id="resultDos" class="mt-3 text-center font-body"></div>
           </form>
         </div>
       </div>
       <!-- Dialog Footer -->
       <div
-        class="flex flex-col-reverse justify-between gap-2  border-neutral-300 bg-neutral-50/60 p-4 dark:border-neutral-700 dark:bg-neutral-950/20 sm:flex-row sm:items-center md:justify-end"
+        class="flex flex-col-reverse justify-between gap-2 border-neutral-300 bg-neutral-50/60 p-4 sm:flex-row sm:items-center md:justify-end"
       >
         <button
-        id="submitFormButton"
           @click="modalIsOpen = false"
           type="button"
           class="cursor-pointer whitespace-nowrap rounded-md px-4 py-2 text-center text-sm font-medium tracking-wide text-neutral-600 transition hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black active:opacity-100 active:outline-offset-0 dark:text-neutral-300 dark:focus-visible:outline-white"
@@ -192,109 +212,97 @@ const services = [
       </div>
     </div>
   </div>
+</div>
 
-<script is:inline defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
+<style>
+ 
 
-  // @ts-nocheck
-  const swiper = new Swiper('.swiper', {
-    autoplay: {
-    delay: 5000,
-  },
-    direction: "horizontal",
-    
-  
-  });
-</script>
-<script> 
-const emailForm = document.getElementById("emailForm") as HTMLFormElement | null;
-const submitFormButton = document.getElementById("submitFormButton");
-const responseMessage = document.getElementById("responseMessage")!;
+  .validated :placeholder-shown:invalid ~ .empty-feedback {
+    display: block;
+  }
 
-if (emailForm) { // Check if emailForm is not null
-  submitFormButton?.addEventListener("click", async (event) => {
-    // Evitar el comportamiento por defecto del formulario
-    event.preventDefault();
+  .validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+    display: block;
+  }
 
-    // Limpiar mensajes anteriores
-    responseMessage.textContent = "";
-    responseMessage.className = "";
+  .invalid,
+  .validated :invalid {
+    border-color: #dc3545;
+  }
+</style>
 
-    // Crear un objeto FormData con los datos del formulario
-    const formData = new FormData(emailForm);
+<script is:inline>
 
-    // Validar el campo de email
-    const emailValue = formData.get("email");
-    if (typeof emailValue === 'string' && emailValue.trim()) {
-      const trimmedEmailValue = emailValue.trim();
+  // use astro:page-load event if you are using View Transitions
+  document.addEventListener(
+    "astro:page-load",
+    () => {
+      const formDos = document.getElementById("formDos");
+      const resultDos = document.getElementById("resultDos");
 
-      if (!validateEmail(trimmedEmailValue)) {
-        responseMessage.textContent = "Por favor, ingresa un correo electrónico válido.";
-        responseMessage.className = "text-red-500";
-        return;
-      }
+      formDos.addEventListener("submit", function (e) {
+        e.preventDefault();
+        formDos.classList.add("validated");
+        if (!formDos.checkValidity()) {
+          formDos.querySelectorAll(":invalid")[0].focus();
+          return;
+        }
+        const formData = new FormData(formDos);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        
+        resultDos.innerHTML = "Sending...";
 
-      try {
-        // Mostrar un mensaje de carga mientras se procesa
-        responseMessage.textContent = "Enviando correo...";
-        responseMessage.className = "text-gray-600";
-
-        // Convertir FormData a JSON
-        const formDataJson = Object.fromEntries(formData.entries());
-
-        // Enviar la solicitud al backend
-        const res = await fetch("/api/resendEmail.json", {
+        fetch("https://api.web3forms.com/submit", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            Accept: "application/json",
           },
-          body: JSON.stringify({
-            from: "info@sarpin.agency", // Correo autorizado en Resend
-            to: "info@sarpin.agency", // Tu correo corporativo
-            subject: "Nuevo correo desde el formulario de Servicios",
-            html: `<p>Has recibido un nuevo correo:</p>
-                   <p><strong>Nombre / Empresa:</strong> ${formDataJson.name}</p>
-                   <p><strong>Email:</strong> ${formDataJson.email}</p>
-                   <p><strong>Teléfono:</strong> ${formDataJson.phone}</p>
-                   <p><strong>Mensaje:</strong> ${formDataJson.message}</p>`,
-            text: `Has recibido un nuevo correo:
-                   Nombre: ${formDataJson.name}
-                   Email: ${formDataJson.email}
-                   Teléfono: ${formDataJson.phone}
-                   Mensaje: ${formDataJson.message}`
-          }),
-        });
+          body: json,
+        })
+          .then(async (response) => {
 
-        // Manejar la respuesta
-        const data = await res.json();
-        if (res.ok) {
-          responseMessage.textContent = `¡Correo enviado con éxito! Hemos recibido tu información.`;
-          responseMessage.className = "text-green-500";
-          emailForm.reset(); // Limpiar el formulario
-        } else {
-          throw new Error(data.message || "Error desconocido.");
-        }
-      } catch (error) {
-        if (error instanceof Error) {
-          responseMessage.textContent = `Hubo un error al enviar el correo. ${error.message}`;
-        } else {
-          responseMessage.textContent = `Hubo un error al enviar el correo. Error desconocido.`;
-        }
-        responseMessage.className = "text-red-500";
-        console.error("Error al enviar el correo:", error)
-      }
-    } else {
-      responseMessage.textContent = "Por favor, ingresa un correo electrónico válido.";
-      responseMessage.className = "text-red-500";
-    }
-  });
-}
-
-// Función para validar correos electrónicos
-function validateEmail(email: string) {
-  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  return emailRegex.test(email);
-}
+            let json = await response.json();
+            if (response.status == 200) {
+              resultDos.classList.add("text-oxford-blue");
+              resultDos.innerHTML = "¡Correo enviado con éxito! Nos comunicaremos en menos de 24 horas."
+            } else {
+              console.log(response);
+              resultDos.classList.add("text-red-500");
+              resultDos.innerHTML = json.message;
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+            resultDos.innerHTML = "Something went wrong!";
+          })
+          .then(function () {
+            formDos.reset();
+            formDos.classList.remove("validated");
+            setTimeout(() => {
+              resultDos.style.display = "none";
+            }, 10000);
+          });
+      });
+    },
+    { once: true }
+  );
+</script>
 
 
+
+
+<script
+is:inline
+defer
+src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+// @ts-nocheck
+const swiper = new Swiper(".swiper", {
+  autoplay: {
+    delay: 5000,
+  },
+  direction: "horizontal",
+});
 </script>
