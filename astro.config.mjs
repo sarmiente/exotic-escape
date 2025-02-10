@@ -8,6 +8,9 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
+  experimental: {
+    svg: true,
+  },
   site: "https://wesell.com.co",
   image: {
     remotePatterns: [{ protocol: "https" }],

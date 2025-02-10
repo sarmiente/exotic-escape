@@ -44,12 +44,12 @@ const footerData = [
         <div class="flex justify-center text-oxford-blue lg:justify-start">
             
             <a href={localizePath("/")}>
-                <img class="w-auto h-12 sm:h-16" src="/logo_wesell_dos.svg" alt="Logo de WESELL">
+                <img class="w-auto h-14 sm:h-24" src="/logo_wesell_dos.svg" alt="Logo de WESELL">
             </a>
         </div>
-        <div class="flex justify-center text-oxford-blue sm:justify-start">
+        <div class="flex justify-center  sm:justify-start">
             
-        <p class="mt-6 max-w-md text-center font-body uppercase leading-relaxed text-gray-500 sm:max-w-xs lg:text-left">
+        <p class="mt-6 max-w-md text-center font-body uppercase leading-relaxed text-oxford-blue sm:max-w-xs lg:text-left">
          {t("nav.msg")}
         </p>
       </div>
@@ -190,8 +190,14 @@ const footerData = [
               </address>
               <br>
               <address class="flex justify-center sm:justify-start  items-center -mt-0.5 not-italic text-gray-700 font-body capitalize">
-                <Icon name="location" />
+                <Icon name="location" class="text-true-blue" />
                 Bogotá
+              </address>
+              <br>
+
+              <address class="flex justify-center sm:justify-start  items-center -mt-0.5 not-italic text-gray-700 font-body capitalize">
+                <Icon name="location" class="text-oxford-blue" />
+                Buenaventura
               </address>
             </li>
 

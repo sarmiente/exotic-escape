@@ -63,7 +63,8 @@
         "title" : "Localizaciones",
         "subtitle": "Innovación y Eficiencia en Movimiento Global",
         "msg-one": "Nuestra sede en Cartagena se especializa en la logística marítima y portuaria. Con una infraestructura moderna y un equipo altamente calificado, garantizamos una eficiente gestión de cargas y operaciones en uno de los puertos más importantes de la región.",
-        "msg-two": "Nuestra sede en Bogotá se destaca por su logística terrestre y aérea, ofreciendo soluciones integrales para la distribución nacional e internacional. Ubicados estratégicamente, facilitamos la conectividad y el acceso a mercados globales."
+        "msg-two": "Nuestra sede en Bogotá se destaca por su logística terrestre y aérea, ofreciendo soluciones integrales para la distribución nacional e internacional. Ubicados estratégicamente, facilitamos la conectividad y el acceso a mercados globales.",
+        "msg-three": "Nuestra sede en Buenaventura se especializa en la logística marítima y portuaria. Con una infraestructura moderna y un equipo altamente calificado, garantizamos una eficiente gestión de cargas y operaciones en el puerto más importante del Pacífico colombiano, clave para el comercio internacional del país."
     },
     "blog":{
         "main" : "Explorar",
