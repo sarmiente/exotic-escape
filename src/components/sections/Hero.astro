@@ -1,35 +1,26 @@
 ---
 import { Icon } from "astro-icon/components";
-
 import { t } from "i18next";
 import FormButton from "../buttons/FormButton.astro";
-
 ---
 
-
 <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 <script is:inline>
-      document.addEventListener('astro:page-load', () => {
-        
-            const swiper = new Swiper('.mySwiper', {
-              loop: true,
-              direction: "horizontal",
-              autoplay: {
-                delay: 6000,
-            }
-          });
-           
-      })
-  
+  document.addEventListener('astro:page-load', () => {
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      direction: "horizontal",
+      autoplay: {
+        delay: 6000,
+      },
+    });
+  });
 </script>
 
-
-<div class="relative flex h-[90vh] md:h-[80vh] ">
+<div class="relative flex h-[90vh] md:h-[80vh]">
   <!-- Sección de contenido -->
-  
-  <div class="absolute bottom-12 text-center space-y-6 text-white z-10 overflow-hidden">
-    <h1 class="text-4xl font-hero lg:text-6xl uppercase">
+  <div class="absolute inset-0 flex flex-col justify-center items-center text-center space-y-4 text-white z-10">
+    <h1 class="text-4xl font-hero md:text-5xl lg:text-7xl uppercase">
       {t("nav.msg")}
     </h1>
     <p class="text-xl font-body lg:text-2xl capitalize">
@@ -39,31 +30,32 @@ import FormButton from "../buttons/FormButton.astro";
       <FormButton />
     </div>
   </div>
+
   <!-- Sección de slider -->
-  <div class=" relative w-full md:flex swiper mySwiper overflow-hidden">
-    <div class="swiper-wrapper flex">
+  <div class="relative w-full swiper mySwiper overflow-hidden">
+    <div class="swiper-wrapper">
       <!-- Slide 1 -->
       <div class="swiper-slide w-full h-full bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1709824686105-38e21c8c9e93?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
         <div class="absolute inset-0 bg-rich-black/60"></div>
-        <div class="relative bg-rich-black w-fit flex p-2 rounded-br-lg">
+        <div class="absolute bottom-4 left-4 bg-rich-black w-fit flex p-2 rounded-br-lg">
           <Icon name="location" class="text-red-600 items-center" />
           <p class="font-body capitalize text-white text-xs">Hamburg, Deutschland</p>
         </div>
       </div>
-  
+
       <!-- Slide 2 -->
       <div class="swiper-slide w-full h-full bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
         <div class="absolute inset-0 bg-rich-black/60"></div>
-        <div class="relative bg-rich-black w-fit flex p-2 rounded-br-lg">
+        <div class="absolute bottom-4 left-4 bg-rich-black w-fit flex p-2 rounded-br-lg">
           <Icon name="location" class="text-red-600 items-center" />
           <p class="font-body capitalize text-white text-xs">Bukit Merah, Singapore</p>
         </div>
       </div>
-  
+
       <!-- Slide 3 -->
       <div class="swiper-slide w-full h-full bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1606964212858-c215029db704?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
         <div class="absolute inset-0 bg-rich-black/60"></div>
-        <div class="relative bg-rich-black w-fit flex p-2 rounded-br-lg">
+        <div class="absolute bottom-4 left-4 bg-rich-black w-fit flex p-2 rounded-br-lg">
           <Icon name="location" class="text-red-600 items-center" />
           <p class="font-body capitalize text-white text-xs">Los Angeles CA, USA</p>
         </div>
@@ -72,15 +64,11 @@ import FormButton from "../buttons/FormButton.astro";
       <!-- Slide 4 -->
       <div class="swiper-slide w-full h-full bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1601311852860-1d8f42381551?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
         <div class="absolute inset-0 bg-rich-black/60"></div>
-        <div class="relative bg-rich-black w-fit flex p-2 rounded-br-lg">
+        <div class="absolute bottom-4 left-4 bg-rich-black w-fit flex p-2 rounded-br-lg">
           <Icon name="location" class="text-red-600 items-center" />
           <p class="font-body capitalize text-white text-xs">Valparaíso, Chile</p>
         </div>
       </div>
     </div>
   </div>
-
-
-
 </div>
-
