@@ -6,6 +6,7 @@
 @tailwind utilities;
 
 @layer base {
+  [x-cloak] { display: none !important; }
   body {
     margin: 0;
     padding: 0;
