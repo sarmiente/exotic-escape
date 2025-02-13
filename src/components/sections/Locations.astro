@@ -1,10 +1,7 @@
 ---
 import { t } from "i18next";
 ---
-
-<section
-  class="bg-true-blue dark:bg-gray-900 flex justify-center items-center min-h-screen pt-12"
->
+<section class="bg-true-blue dark:bg-gray-900 flex justify-center items-center min-h-screen pt-12">
   <div class="px-6 py-16 mx-auto space-y-10">
     <!-- Encabezado -->
     <div class="space-y-4 text-center text-white">
@@ -12,110 +9,49 @@ import { t } from "i18next";
       <h1 class="text-3xl font-hero lg:text-4xl">{t("location.subtitle")}</h1>
     </div>
 
-    <!-- Contenido -->
-
-     <!-- Bloque 2 -->
-
-     <div class="px-6 mx-auto sm:space-y-4">
-        <div class="items-center lg:flex lg:justify-center space-y-4">
-          <div
-            class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2 lg:justify-start"
-          >
-            <img
-              class="size-3/4 rounded-full lg:max-w-3xl "
-              src="https://images.unsplash.com/photo-1651421479936-e24edc3e3143?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Imagen de Quienes somos"
-            />
-          </div>
-          <div class="w-full lg:w-1/3">
-           <div class="lg:max-w-lg space-y-6">
-              <h1
-                class="text-3xl font-hero text-white lg:text-4xl text-center lg:text-left"
-              >
-              Cartagena de Indias
-              </h1>
-  
-              <p
-                class="font-body font-light mt-3 text-white text-center lg:text-left"
-              >
-              {t("location.msg-one")}
-              </p>
-            </div>
-          </div>
-        </div>
+    <!-- Bloque 1: Bogotá -->
+    <div class="flex flex-col gap-10 lg:flex-row items-center lg:justify-center space-y-4 lg:space-y-0 lg:space-x-8">
+      <div class="w-full lg:w-1/3 order-1 lg:order-2 space-y-6 text-center lg:text-left">
+        <h1 class="text-3xl font-hero text-white lg:text-4xl">Bogotá</h1>
+        <p class="font-body font-light text-white">{t("location.msg-two")}</p>
       </div>
-  
-
-
-
-
-    <!-- Bloque 1 -->
-    <div class="px-6 py-8 mx-auto">
-      <div class="items-center lg:flex lg:justify-center">
-        <div class="w-full lg:w-1/3">
-          <div class="lg:max-w-lg space-y-6">
-            <h1
-              class="text-3xl font-hero text-white lg:text-4xl text-center lg:text-left"
-            >
-            Bogotá
-            </h1>
-
-            <p
-              class="font-body font-light mt-3 text-white text-center lg:text-left"
-            >
-              {t("location.msg-two")}
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2 lg:justify-end"
-        >
-          <img
-            class="size-3/4 rounded-full lg:max-w-3xl"
-            src="https://images.unsplash.com/photo-1568632234157-ce7aecd03d0d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Imagen de Quienes somos"
-          />
-        </div>
+      <div class="w-full lg:w-1/3 order-2 lg:order-1">
+        <img
+          class="w-full h-auto rounded-full object-cover"
+          src="https://images.unsplash.com/photo-1568632234157-ce7aecd03d0d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Bogotá - Ciudad vibrante y cultural"
+        />
       </div>
     </div>
 
-
-
-
-    
-    <div class="px-6 mx-auto sm:space-y-4">
-      <div class="items-center lg:flex lg:justify-center space-y-4">
-        <div
-          class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2 lg:justify-start"
-        >
-          <img
-            class="size-3/4 rounded-full lg:max-w-3xl "
-            src="https://upload.wikimedia.org/wikipedia/commons/6/63/Sociedad_portuaria_regional_de_buenaventura.jpg"
-            alt="Imagen de Quienes somos"
-          />
-        </div>
-        <div class="w-full lg:w-1/3">
-         <div class="lg:max-w-lg space-y-6">
-            <h1
-              class="text-3xl font-hero text-white lg:text-4xl text-center lg:text-left"
-            >
-            Buenaventura
-            </h1>
-
-            <p
-              class="font-body font-light mt-3 text-white text-center lg:text-left"
-            >
-            {t("location.msg-three")}
-            </p>
-          </div>
-        </div>
+    <!-- Bloque 2: Cartagena de Indias -->
+    <div class="flex flex-col lg:flex-row-reverse items-center lg:justify-center space-y-4 lg:space-y-0 lg:space-x-8">
+      <div class="w-full lg:w-1/3 order-1 lg:order-2 space-y-6 text-center lg:text-left">
+        <h1 class="text-3xl font-hero text-white lg:text-4xl">Cartagena de Indias</h1>
+        <p class="font-body font-light text-white">{t("location.msg-one")}</p>
+      </div>
+      <div class="w-full lg:w-1/3 order-2 lg:order-1">
+        <img
+          class="w-full h-auto rounded-full object-cover"
+          src="https://images.unsplash.com/photo-1651421479936-e24edc3e3143?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Cartagena de Indias - Ciudad amurallada con historia"
+        />
       </div>
     </div>
 
-
-   
-
-
+    <!-- Bloque 3: Buenaventura -->
+    <div class="flex flex-col gap-10 lg:flex-row items-center lg:justify-center space-y-4 lg:space-y-0 lg:space-x-8">
+      <div class="w-full lg:w-1/3 order-1 lg:order-2 space-y-6 text-center lg:text-left">
+        <h1 class="text-3xl font-hero text-white lg:text-4xl">Buenaventura</h1>
+        <p class="font-body font-light text-white">{t("location.msg-three")}</p>
+      </div>
+      <div class="w-full lg:w-1/3 order-2 lg:order-1">
+        <img
+          class="w-full h-auto rounded-full object-cover"
+          src="https://upload.wikimedia.org/wikipedia/commons/6/63/Sociedad_portuaria_regional_de_buenaventura.jpg"
+          alt="Buenaventura - Puerto principal del Pacífico colombiano"
+        />
+      </div>
+    </div>
   </div>
 </section>
