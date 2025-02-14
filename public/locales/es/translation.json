@@ -25,6 +25,9 @@
     "btn": "Obtener Informacion",
     "quote": "Cotizar"
 },
+"layout": {
+    "description": "Transporte Internacional eficiente. Exporta, importa y haz crecer tu negocio con entregas seguras y puntuales en todo el mundo."
+},
 "cta":{
     "title" : "Contáctanos",
     "address" : "Dirección",

@@ -26,6 +26,10 @@
         "quote": "Quote"
     
     },
+
+    "layout": {
+        "description": "Efficient International Transport & Cargo Services. Export, import, and grow your business with reliable, on-time deliveries worldwide."
+    },
     "cta":{
         "title" : "Contact us",
         "address" : "Address",
