@@ -132,5 +132,216 @@
     "para-10-1": "",
     "para-10-2": "",
     "para-10-3": ""
+  },
+  "blogTwo": {
+  "title": "",
+  "description": "",
+  "para-1-title": "",
+  "para-1": "",
+  "para-1-1": "",
+  "para-1-2": "",
+  "para-2-title": "",
+  "para-2": "",
+  "para-2-1": "",
+  "para-2-2": "",
+  "para-3-title": "",
+  "para-3": ".",
+  "para-3-1": "",
+  "para-3-2": "",
+  "para-4-title": "",
+  "para-4": "",
+  "para-4-1": "",
+  "para-4-2": "",
+  "para-5": "",
+  "para-5-1": "",
+  "para-5-2": "",
+  "para-6-title": "",
+  "para-6": "",
+  "para-6-1": "",
+  "para-6-2": "",
+  "para-7-title": "",
+  "para-7": "",
+  "para-7-1": "",
+  "para-7-2": "",
+  "para-8-title": "",
+  "para-8": "",
+  "para-8-1": "",
+  "para-8-2": "",
+  "para-9-title": "",
+  "para-9": ".",
+  "para-9-1": "",
+  "para-9-2": "",
+  "para-10-title": "",
+  "para-10": "",
+  "para-10-1": "",
+  "para-10-2": ""
+},
+"blogThree": {
+  "title": "",
+  "description": "",
+  "description-two": "",
+  "para-1": "",
+  "para-1-1": "",
+  "para-1-2": "",
+  "para-2-title": "",
+  "para-2": "",
+  "para-2-1": "",
+  "para-2-2": "",
+  "para-3-title": "",
+  "para-3": "",
+  "para-3-1": "",
+  "para-3-2": "",
+  "para-4": "",
+  "para-4-1": "",
+  "para-4-2": "",
+  "para-5-title": "",
+  "para-5": "",
+  "para-5-1": "",
+  "para-5-2": "",
+  "para-6-title": "",
+  "para-6": "",
+  "para-6-1": "",
+  "para-6-2": "",
+  "para-7-title": "",
+  "para-7": "",
+  "para-7-1": "",
+  "para-7-2": "",
+  "para-8-title": "",
+  "para-8": "",
+  "para-8-1": "",
+  "para-8-2": "",
+  "para-9-title": "",
+  "para-9": "",
+  "para-9-1": "",
+  "para-9-2": "",
+  "para-10-title": "",
+  "para-10": "",
+  "para-10-1": ""
+  
+},
+"blogFour": {
+  "title": "",
+  
+  "description": "",
+  "introduction" : "",
+  "para-title": "",
+  "para-1": "",
+
+
+  "para-1-title":"",
+
+  "list-1-title": "",
+  "list-1-para": "",
+  "list-2-title": "",
+  "list-2-para": "",
+  "list-3-title": "",
+  "list-3-para": "",
+  "list-4-title": "",
+  "list-4-para": "",
+  
+  "para-2-title": "",
+  "para-2": "",
+  "para-2-list-1": "",
+  "para-2-list-2": "",
+  "para-2-list-3": "",
+  "para-2-list-4": "",
+  
+  "para-3-title": "",
+  "para-3-list-1": "",
+  "para-3-par-1" : "",
+  "para-3-list-2": "",
+  "para-3-par-2" : "",
+  "para-3-list-3": "",
+  "para-3-par-3" : "",
+  "para-3-list-4": "",
+  "para-3-par-4" : "",
+
+
+
+  "para-4-title": "",
+  "para-4-par": "",
+  "para-4-list-1": "",
+  "para-4-list-2": "",
+  "para-4-list-3": "",
+  
+  "para-5-title": "",
+  "para-5": "",
+  "para-5-list-1": "",
+  "para-5-list-2": "",
+  "para-5-list-3": "",
+
+  "para-final": ""
+},
+
+
+"blogFive": {
+  "title": "",
+  "description": "",
+  "para-1-title": "",
+  "para-1": "",
+  
+  
+  "para-2-title": "",
+  "para-2": "",
+
+  "para-2-listTitle": "",
+  "para-2-par": "",
+
+  "para-2-item-1": "",
+  "para-2-item-2": "",
+  "para-2-item-3": "",
+
+
+  "para-3-listTitle": "",
+  "para-3-par": "",
+ 
+
+
+  "para-4-listTitle": "",
+  "para-4-par": "",
+
+
+  "para-5-listTitle": "",
+  "para-5-par": "",
+
+
+  "para-6-listTitle": "",
+  "para-6-par": "",
+
+  "para-6-item-1": "",
+  "para-6-item-2": "",
+  "para-6-item-3": "",
+  "para-6-item-4": "",
+
+  "para-7-listTitle": "",
+  "para-7-par": "",
+  "para-7-item-1": "",
+  "para-7-item-2": "",
+  "para-7-item-3": "",
+  "para-7-item-4": "",
+  "para-7-item-5": "",
+
+  "para-8-listTitle": "",
+  "para-8-par": "",
+  "para-8-item-1": "",
+  "para-8-item-2": "",
+  "para-8-item-3": "",
+  "para-8-item-4": "",
+
+  "para-9-listTitle": "",
+  "para-9-par": "",
+  "para-9-item-1": "",
+  "para-9-item-2": "",
+  "para-9-item-3": "",
+ 
+
+  "para-10-listTitle": "",
+  "para-10-par": "",
+  "para-10-item-1": "",
+  "para-10-item-2": "",
+  "para-10-item-3": "",
+
+  "para-11-listTitle": "",
+  "para-11-par": ""
   }
 }
