@@ -30,7 +30,7 @@ const options = { year: 'numeric', month: 'short', day: 'numeric' };
         const formattedDate = pubDate.toLocaleDateString('en-US', options);
         
         return (
-          <div class="hover:scale-105">
+          <div class="hover:scale-105 transition">
               <img
                 class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
                 src={post.data.heroImage}
@@ -47,10 +47,10 @@ const options = { year: 'numeric', month: 'short', day: 'numeric' };
                 <div class="flex items-center justify-between mt-4">
                   <div>
                     <a
-                      href="#"
+                      href="/"
                       class="text-lg  font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
                     >
-                      Autor
+                      WESELL
                     </a>
                     <p class="text-sm text-gray-500 dark:text-gray-400">
                         {formattedDate}

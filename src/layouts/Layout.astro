@@ -5,12 +5,12 @@ import LanguagePicker from "../components/LanguagePicker.astro";
 import "../../src/styles/globals.css"
 import Whatsapp from "../components/buttons/Whatsapp.astro";
 import BaseHead from "../components/meta/BaseHead.astro";
-
+import i18next from "i18next";
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={i18next.language}>
 	<head>
 		<BaseHead title={title} />
 		
