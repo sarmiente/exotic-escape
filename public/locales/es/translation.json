@@ -221,7 +221,7 @@
 "blogFour": {
   "title": "Terminales de Carga Terrestre: Infraestructura Clave para el Transporte Logístico",
   
-  "description": "Las terminales de carga terrestre son infraestructuras diseñadas para la recepción, almacenamiento, distribución y <strong>transferencia de mercancías entre distintos modos de transporte, como camiones, ferrocarriles y barcos. Estas terminales son esenciales para la logística moderna, ya que permiten una gestión eficiente del flujo de productos y materiales.",
+  "description": "Las terminales de carga terrestre son infraestructuras diseñadas para la recepción, almacenamiento, distribución y transferencia de mercancías entre distintos modos de transporte, como camiones, ferrocarriles y barcos. Estas terminales son esenciales para la logística moderna, ya que permiten una gestión eficiente del flujo de productos y materiales.",
   "introduction" : "¿Qué son las Terminales de Carga Terrestre?",
   "para-title": "Importancia de las Terminales de Carga Terrestre en la Logística Moderna",
   "para-1": "Las terminales de carga terrestre desempeñan un papel fundamental en la cadena de suministro, ya que facilitan la <strong>reducción de costos de transporte</strong>, optimizan tiempos de entrega y mejoran la seguridad en el manejo de mercancías. A través de una infraestructura moderna y bien gestionada, las empresas pueden garantizar que sus productos lleguen a sus destinos de manera eficiente y rentable.",
@@ -283,34 +283,36 @@
   "para-2-title": "Tipos de Empresas Transportadoras de Carga",
   "para-2": "Existen varios tipos de <strong>empresas transportadoras de carga</strong>, dependiendo del medio de transporte que utilicen y del tipo de mercancía que movilicen. Entre los principales tipos encontramos:",
 
-  "para-2-listTitle-1": "Transporte Terrestre",
+  "para-2-listTitle": "Transporte Terrestre",
   "para-2-par": "Es el más utilizado para el comercio nacional e internacional cercano. Dentro de este, existen subcategorías como:",
+
   "para-2-item-1": "<strong>Transporte de carga ligera</strong>: ideal para envíos pequeños y de corta distancia.",
   "para-2-item-2": "<strong>Transporte de carga pesada</strong>: utilizado para mercancías voluminosas y de gran peso.",
   "para-2-item-3": "<strong>Transporte refrigerado</strong>: especializado en productos perecederos.",
 
 
-  "para-3-listTitle-1": "Transporte Marítimo",
+  "para-3-listTitle": "Transporte Marítimo",
   "para-3-par": "Ideal para el comercio internacional, permite el traslado de grandes volúmenes de mercancía a través de contenedores. Se caracteriza por su costo más bajo en comparación con otros medios y su capacidad de transportar cargas pesadas.",
  
 
 
-  "para-4-listTitle-1": "Transporte Aéreo",
+  "para-4-listTitle": "Transporte Aéreo",
   "para-4-par": "Es la opción más rápida y segura para transportar mercancías de alto valor o urgentes. Sin embargo, suele ser más costoso que otros medios de transporte.",
 
 
-  "para-5-listTitle-1": "Transporte Ferroviario",
+  "para-5-listTitle": "Transporte Ferroviario",
   "para-5-par": "Aunque menos común en algunos países, es una excelente opción para movilizar grandes volúmenes de mercancía de manera eficiente y a menor costo en distancias largas.",
 
 
-  "para-6-listTitle-1": "Beneficios de Contratar una Empresa Transportadora de Carga",
+  "para-6-listTitle": "Beneficios de Contratar una Empresa Transportadora de Carga",
   "para-6-par": "Elegir una empresa transportadora de carga puede traer múltiples ventajas, tales como:",
+
   "para-6-item-1": "<strong>Eficiencia en tiempos de entrega</strong>: optimizan rutas y procesos logísticos.",
   "para-6-item-2": "<strong>Seguridad para la mercancía</strong>: cuentan con protocolos que minimizan riesgos.",
   "para-6-item-3": "<strong>Reducción de costos operativo</strong>: evitan la inversión en flotas de transporte propias.",
   "para-6-item-4": "<strong>Seguimiento en tiempo real</strong>: muchas empresas ofrecen herramientas digitales para rastrear envíos.",
 
-  "para-7-listTitle-1": "Factores a Considerar al Elegir una Empresa Transportadora de Carga",
+  "para-7-listTitle": "Factores a Considerar al Elegir una Empresa Transportadora de Carga",
   "para-7-par": "Para seleccionar la mejor opción de transporte, es importante analizar los siguientes aspectos:",
   "para-7-item-1": "<strong>Experiencia en el sector</strong>: una empresa con trayectoria brinda mayor confianza y eficiencia.",
   "para-7-item-2": "<strong>Cobertura geográfica</strong>: verifica si operan en las rutas que necesitas.",
@@ -318,28 +320,28 @@
   "para-7-item-4": "<strong>Seguridad y seguro de carga</strong>: asegúrate de que ofrecen cobertura ante pérdidas o daños.",
   "para-7-item-5": "<strong>Tecnología y seguimiento</strong>: el rastreo en tiempo real es clave para la tranquilidad del cliente.",
 
-  "para-8-listTitle-1": "¿Cuánto Cuesta Contratar una Empresa Transportadora de Carga?",
+  "para-8-listTitle": "¿Cuánto Cuesta Contratar una Empresa Transportadora de Carga?",
   "para-8-par": "El costo varía según diversos factores, tales como:",
   "para-8-item-1": "Distancia del envío.",
   "para-8-item-2": "Tipo de carga y su peso.",
   "para-8-item-3": "Urgencia del transporte.",
   "para-8-item-4": "Servicios adicionales, como almacenamiento o seguro de mercancía.",
 
-  "para-9-listTitle-1": "Empresas Transportadoras de Carga en América Latina",
+  "para-9-listTitle": "Empresas Transportadoras de Carga en América Latina",
   "para-9-par": "En la región, existen múltiples compañías destacadas en el sector, entre ellas:",
   "para-9-item-1": "DHL Supply Chain: especializada en logística internacional.",
   "para-9-item-2": "FedEx Freight: líder en transporte terrestre y aéreo.",
   "para-9-item-3": "TCC (Transportadora de Carga Colombiana): reconocida en Colombia por su eficiencia.",
  
 
-  "para-10-listTitle-1": "Tendencias en el Transporte de Carga",
+  "para-10-listTitle": "Tendencias en el Transporte de Carga",
   "para-10-par": "El sector de <strong>transporte de carga</strong> está en constante evolución. Algunas tendencias clave incluyen:",
   "para-10-item-1": "Digitalización y uso de inteligencia artificial para optimizar rutas y costos.",
   "para-10-item-2": "Uso de vehículos eléctricos para reducir la huella de carbono.",
   "para-10-item-3": "Mayor integración de blockchain para seguridad y trazabilidad.",
 
-  "para-11-listTitle-1": "Conclusión",
-  "para-11-par": "Las <strong>empresas transportadoras de carga/strong> son esenciales para el comercio y la economía global. Elegir la adecuada depende de múltiples factores como el tipo de carga, el destino y los costos involucrados. Con la tecnología en constante evolución, el sector seguirá innovando para ofrecer mayor eficiencia y sostenibilidad en el transporte de mercancías."
+  "para-11-listTitle": "Conclusión",
+  "para-11-par": "Las <strong>empresas transportadoras de carga</strong> son esenciales para el comercio y la economía global. Elegir la adecuada depende de múltiples factores como el tipo de carga, el destino y los costos involucrados. Con la tecnología en constante evolución, el sector seguirá innovando para ofrecer mayor eficiencia y sostenibilidad en el transporte de mercancías."
   
 
 }
