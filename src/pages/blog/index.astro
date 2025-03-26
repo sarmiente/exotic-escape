@@ -21,7 +21,7 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueO
             {t("blog.art")}
           </p>
 
-          <!--Input de busqueda en blog -->
+          <!--Input de busqueda en blog 
           <div  class="relative w-1/2 mx-auto">
             <div class="absolute left-4 top-3 text-gray-400">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -31,7 +31,7 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueO
             
            <input class="search w-full rounded-full hover:shadow-lg focus:shadow-lg focus:outline-0 p-2.5 border pl-10" type="search" placeholder="Buscar por titulo">
         </div>
-         
+         -->
     </div>
       <ul class="grid gap-8 max-w-6xl mx-auto px-4 sm:grid-cols-2 lg:grid-cols-3 py-12 list">
         {posts.map((post) => (
